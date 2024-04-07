@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XPHQLhxfISRlDuA8UwVUbfq1bRjZDvddhl+dcxKhMxYbQWuhuKx9C0p7IyVg2MHQDCpkVI5O3HMkEvVLuYru4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Common\\Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moresabj\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.3\\microsoft.aspnetcore.cryptography.internal.8.0.3.nupkg.sha512",
+    "C:\\Users\\moresabj\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.3\\microsoft.aspnetcore.cryptography.keyderivation.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

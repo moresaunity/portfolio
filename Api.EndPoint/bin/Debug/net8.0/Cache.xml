@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api.EndPoint</name>
+    </assembly>
+    <members>
+        <member name="M:Api.EndPoint.Controllers.V1.AccountController.CreateJwtToken(Domain.Users.User,System.String)">
+            <summary>
+            Create Jwt Token For Users
+            </summary>
+            <param name="user">User information</param>
+            <param name="status">Status</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductController.GenerateLink(System.Int32)">
+            <summary>
+            Generate Link for this Controller Methodes
+            </summary>
+            <param name="Id">Brand Id</param>
+            <returns>List Links</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.UserController.Get">
+            <summary>
+            Get All Users
+            </summary>
+            <returns>Users</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.UserController.Get(System.String)">
+            <summary>
+            Find User By Id
+            </summary>
+            <param name="id">User Id</param>
+            <returns>User</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.UserController.Post(System.String)">
+            <summary>
+            Log Out User
+            </summary>
+            <param name="Authorization">Token</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.UserController.Put(System.String,Api.EndPoint.Models.Dtos.AccountDto)">
+            <summary>
+            Edit User
+            </summary>
+            <param name="id">User Id</param>
+            <param name="model">User information</param>
+            <returns>Message</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.UserController.Delete(System.String)">
+            <summary>
+            Delete User
+            </summary>
+            <param name="id">User Id</param>
+            <returns>Message</returns>
+        </member>
+    </members>
+</doc>
