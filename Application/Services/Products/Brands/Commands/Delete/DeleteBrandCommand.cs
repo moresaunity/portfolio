@@ -1,4 +1,5 @@
-﻿using Domain.Products;
+﻿using Domain.Dtos;
+using Domain.Products;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Aplication.Services.Brands.Commands.Delete
 {
-    public class DeleteBrandCommand : IRequest<DeleteBrandResponseDto>
+    public class DeleteBrandCommand : IRequest<BaseDto<DeleteBrandResponseDto>>
     {
         public int Id { get; set; }
         public DeleteBrandCommand(int Id)

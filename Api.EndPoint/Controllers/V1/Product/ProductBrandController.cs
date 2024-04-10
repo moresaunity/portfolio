@@ -1,7 +1,11 @@
 ﻿using Api.EndPoint.Models.Dtos;
 using Api.EndPoint.Models.Dtos.Product.Brand.Get;
 using Api.EndPoint.Models.Dtos.Product.ProductItem.Get;
+using Aplication.Services.Brands.Commands.Delete;
+using Aplication.Services.Brands.Commands.Edit;
+using Aplication.Services.Products.Brands.Commands.Send;
 using Application.Services.Products.Brands.Queries.Get;
+using Application.Services.Products.Brands.Queries.GetById;
 using AutoMapper;
 using Domain.Dtos;
 using MediatR;
@@ -56,25 +60,70 @@ namespace Api.EndPoint.Controllers.V1.Product
 
 			return Ok(new BaseDto<List<ProductBrandGetResultDto>>(true, new List<string> { "Get Brands Is Success" }, result));
 		}
+		/// <summary>
+		/// Get By Id Brand
+		/// </summary>
+		/// <param name="id">Brand Id</param>
+		/// <returns>Brand</returns>
 		[HttpGet("{id}")]
 		public IActionResult Get(int id)
 		{
-			return Ok();
+			FindByIdBrandRequest request = new FindByIdBrandRequest(id);
+			BaseDto<FindByIdBrandDto> mediateResult = mediator.Send(request).Result;
+			if(!mediateResult.IsSuccess) return NotFound(mediateResult);
+			ProductBrandGetResultDto result = mapper.Map<ProductBrandGetResultDto>(mediateResult.Data);
+			result.Links = GenerateLink(result.Id);
+			return Ok(new BaseDto<ProductBrandGetResultDto>(true, mediateResult.Message, result));
 		}
+		/// <summary>
+		/// Add a New Brand
+		/// </summary>
+		/// <param name="brand">Brand Name</param>
+		/// <returns>Brand</returns>
 		[HttpPost]
-		public IActionResult Post()
+		public IActionResult Post([FromBody] string brand)
 		{
-			return Ok();
+			SendBrandDto sendBrandDto = new SendBrandDto() { Brand = brand };
+			SendBrandCommand request = new SendBrandCommand(sendBrandDto);
+			BaseDto<SendBrandResponseDto> mediateResult = mediator.Send(request).Result;
+			if (!mediateResult.IsSuccess) return BadRequest(mediateResult);
+			ProductBrandGetResultDto result = mapper.Map<ProductBrandGetResultDto>(mediateResult.Data);
+			result.Links = GenerateLink(result.Id);
+			cache.Remove(CacheKey);
+			return Ok(new BaseDto<ProductBrandGetResultDto>(true, mediateResult.Message, result));
 		}
+		/// <summary>
+		/// Edit By Id Brand
+		/// </summary>
+		/// <param name="id">Brand Id</param>
+		/// <param name="brand">Brand Name</param>
+		/// <returns>Brand</returns>
 		[HttpPut("{id}")]
-		public IActionResult Put(int id)
+		public IActionResult Put(int id, [FromBody] string brand)
 		{
-			return Ok();
+			EditBrandDto editBrandDto = new EditBrandDto() { Brand = brand };
+			EditBrandCommand request = new EditBrandCommand(editBrandDto, id);
+			BaseDto<EditBrandResponseDto> mediateResult = mediator.Send(request).Result;
+			if (!mediateResult.IsSuccess) return NotFound(mediateResult);
+			ProductBrandGetResultDto result = mapper.Map<ProductBrandGetResultDto>(mediateResult.Data);
+			result.Links = GenerateLink(result.Id);
+			cache.Remove(CacheKey);
+			return Ok(new BaseDto<ProductBrandGetResultDto>(true, mediateResult.Message, result));
 		}
+		/// <summary>
+		/// Delete Brand By Id
+		/// </summary>
+		/// <param name="id">Brand Id</param>
+		/// <returns>Brand</returns>
 		[HttpDelete("{id}")]
 		public IActionResult Delete(int id)
 		{
-			return Ok();
+			DeleteBrandCommand request = new DeleteBrandCommand(id);
+			BaseDto<DeleteBrandResponseDto> mediateResult = mediator.Send(request).Result;
+			if (!mediateResult.IsSuccess) return NotFound(mediateResult);
+			ProductBrandGetResultDto result = mapper.Map<ProductBrandGetResultDto>(mediateResult.Data);
+			cache.Remove(CacheKey);
+			return Ok(new BaseDto<ProductBrandGetResultDto>(true, mediateResult.Message, result));
 		}
 		/// <summary>
 		/// Generate Link for this Controller Methodes

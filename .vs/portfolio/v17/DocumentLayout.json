@@ -7,31 +7,43 @@
       "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\controllers\\v1\\product\\productbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\product\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\controllers\\v1\\product\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\application\\services\\products\\brands\\commands\\delete\\deletebrandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|solutionrelative:application\\services\\products\\brands\\commands\\delete\\deletebrandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\models\\dtos\\product\\brand\\get\\productitemgetresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\models\\dtos\\product\\brand\\get\\productitemgetresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\application\\services\\products\\brands\\commands\\edit\\editbrandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|solutionrelative:application\\services\\products\\brands\\commands\\edit\\editbrandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\mappingprofiles\\productendpointmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\mappingprofiles\\productendpointmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\application\\services\\products\\brands\\commands\\edit\\editbrandcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|solutionrelative:application\\services\\products\\brands\\commands\\edit\\editbrandcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\application\\services\\products\\brands\\commands\\send\\brandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\application\\services\\products\\brands\\commands\\send\\brandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|solutionrelative:application\\services\\products\\brands\\commands\\send\\brandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\models\\dtos\\product\\productitem\\get\\productitemgetrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\application\\services\\products\\brands\\commands\\send\\brandcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|solutionrelative:application\\services\\products\\brands\\commands\\send\\brandcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\application\\services\\products\\brands\\queries\\getbyid\\findbyidbrandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A189B032-86E4-4651-893E-BF60B0DA7A60}|Application\\Application.csproj|solutionrelative:application\\services\\products\\brands\\queries\\getbyid\\findbyidbrandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\models\\dtos\\product\\brand\\get\\productitemgetresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\models\\dtos\\product\\brand\\get\\productitemgetresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\models\\dtos\\product\\productitem\\get\\productitemgetrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\models\\dtos\\product\\productitem\\get\\productitemgetrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\models\\dtos\\product\\productitem\\put\\productitemputrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\models\\dtos\\product\\productitem\\put\\productitemputrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\models\\dtos\\product\\productitem\\put\\productitemputrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\models\\dtos\\product\\productitem\\post\\productitempostrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\models\\dtos\\product\\productitem\\post\\productitempostrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\models\\dtos\\product\\productitem\\post\\productitempostrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,45 +63,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Product\\ProductController.cs",
-              "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\Product\\ProductController.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Product\\ProductController.cs",
-              "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\Product\\ProductController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAQwEMAAAAAAAAA",
+              "Title": "DeleteBrandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Commands\\Delete\\DeleteBrandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Products\\Brands\\Commands\\Delete\\DeleteBrandHandler.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Commands\\Delete\\DeleteBrandHandler.cs",
+              "RelativeToolTip": "Application\\Services\\Products\\Brands\\Commands\\Delete\\DeleteBrandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T18:53:31.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductEndPointMappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\MappingProfiles\\ProductEndPointMappingProfile.cs",
-              "RelativeDocumentMoniker": "Api.EndPoint\\MappingProfiles\\ProductEndPointMappingProfile.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\MappingProfiles\\ProductEndPointMappingProfile.cs",
-              "RelativeToolTip": "Api.EndPoint\\MappingProfiles\\ProductEndPointMappingProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T18:52:50.316Z",
+              "WhenOpened": "2024-04-10T16:47:22.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductItemGetResultDto.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\Product\\Brand\\Get\\ProductItemGetResultDto.cs",
-              "RelativeDocumentMoniker": "Api.EndPoint\\Models\\Dtos\\Product\\Brand\\Get\\ProductItemGetResultDto.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\Product\\Brand\\Get\\ProductItemGetResultDto.cs",
-              "RelativeToolTip": "Api.EndPoint\\Models\\Dtos\\Product\\Brand\\Get\\ProductItemGetResultDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
+              "Title": "EditBrandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Commands\\Edit\\EditBrandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Products\\Brands\\Commands\\Edit\\EditBrandHandler.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Commands\\Edit\\EditBrandHandler.cs",
+              "RelativeToolTip": "Application\\Services\\Products\\Brands\\Commands\\Edit\\EditBrandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T18:16:45.807Z",
+              "WhenOpened": "2024-04-10T16:37:25.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BrandCommand.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Commands\\Send\\BrandCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Products\\Brands\\Commands\\Send\\BrandCommand.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Commands\\Send\\BrandCommand.cs",
+              "RelativeToolTip": "Application\\Services\\Products\\Brands\\Commands\\Send\\BrandCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T16:32:16.471Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "FindByIdBrandRequest.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Queries\\GetById\\FindByIdBrandRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Products\\Brands\\Queries\\GetById\\FindByIdBrandRequest.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Queries\\GetById\\FindByIdBrandRequest.cs",
+              "RelativeToolTip": "Application\\Services\\Products\\Brands\\Queries\\GetById\\FindByIdBrandRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T16:18:56.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ProductItemPutRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\Product\\ProductItem\\Put\\ProductItemPutRequestDto.cs",
               "RelativeDocumentMoniker": "Api.EndPoint\\Models\\Dtos\\Product\\ProductItem\\Put\\ProductItemPutRequestDto.cs",
@@ -97,12 +122,11 @@
               "RelativeToolTip": "Api.EndPoint\\Models\\Dtos\\Product\\ProductItem\\Put\\ProductItemPutRequestDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T18:16:00.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T18:16:00.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ProductItemGetRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\Product\\ProductItem\\Get\\ProductItemGetRequestDto.cs",
               "RelativeDocumentMoniker": "Api.EndPoint\\Models\\Dtos\\Product\\ProductItem\\Get\\ProductItemGetRequestDto.cs",
@@ -110,8 +134,7 @@
               "RelativeToolTip": "Api.EndPoint\\Models\\Dtos\\Product\\ProductItem\\Get\\ProductItemGetRequestDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T18:15:20.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T18:15:20.842Z"
             },
             {
               "$type": "Document",
@@ -121,14 +144,39 @@
               "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\Product\\ProductBrandController.cs",
               "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Product\\ProductBrandController.cs",
               "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\Product\\ProductBrandController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwDkAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T18:13:04.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditBrandCommand.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Commands\\Edit\\EditBrandCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Products\\Brands\\Commands\\Edit\\EditBrandCommand.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Commands\\Edit\\EditBrandCommand.cs",
+              "RelativeToolTip": "Application\\Services\\Products\\Brands\\Commands\\Edit\\EditBrandCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T16:38:46.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ProductItemGetResultDto.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\Product\\Brand\\Get\\ProductItemGetResultDto.cs",
+              "RelativeDocumentMoniker": "Api.EndPoint\\Models\\Dtos\\Product\\Brand\\Get\\ProductItemGetResultDto.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\Product\\Brand\\Get\\ProductItemGetResultDto.cs",
+              "RelativeToolTip": "Api.EndPoint\\Models\\Dtos\\Product\\Brand\\Get\\ProductItemGetResultDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T18:16:45.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ProductItemPostRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\Product\\ProductItem\\Post\\ProductItemPostRequestDto.cs",
               "RelativeDocumentMoniker": "Api.EndPoint\\Models\\Dtos\\Product\\ProductItem\\Post\\ProductItemPostRequestDto.cs",
@@ -136,8 +184,7 @@
               "RelativeToolTip": "Api.EndPoint\\Models\\Dtos\\Product\\ProductItem\\Post\\ProductItemPostRequestDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T18:15:45.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T18:15:45.585Z"
             },
             {
               "$type": "Document",
@@ -147,7 +194,7 @@
               "RelativeDocumentMoniker": "Application\\Services\\Products\\Brands\\Commands\\Send\\BrandHandler.cs",
               "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application\\Services\\Products\\Brands\\Commands\\Send\\BrandHandler.cs",
               "RelativeToolTip": "Application\\Services\\Products\\Brands\\Commands\\Send\\BrandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T18:12:09.331Z",
               "EditorCaption": ""
