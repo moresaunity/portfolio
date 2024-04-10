@@ -307,3 +307,4 @@ C:\Users\moresabj\source\repos\portfolio\Api.EndPoint\bin\Debug\net8.0\AutoMappe
 C:\Users\moresabj\source\repos\portfolio\Api.EndPoint\bin\Debug\net8.0\MediatR.dll
 C:\Users\moresabj\source\repos\portfolio\Api.EndPoint\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Users\moresabj\source\repos\portfolio\Api.EndPoint\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\moresabj\source\repos\portfolio\Api.EndPoint\obj\Debug\net8.0\Api.EndPoint.sourcelink.json

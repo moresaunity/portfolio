@@ -1,8 +1,8 @@
 ﻿using Application.Services.Products.ProductItem;
 
-namespace Api.EndPoint.Models.Dtos.Product.ProductItem
+namespace Api.EndPoint.Models.Dtos.Product.ProductItem.Get
 {
-    public class ProductItemGetByIdResultDto
+    public class ProductItemGetResultDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

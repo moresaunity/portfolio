@@ -1,6 +1,7 @@
 ﻿using Api.EndPoint.Controllers.V1.Product;
 using Api.EndPoint.MappingProfiles;
-using Api.EndPoint.Models.Dtos.Product.ProductItem;
+using Api.EndPoint.Models.Dtos.Product.ProductItem.Get;
+using Api.EndPoint.Models.Dtos.Product.ProductItem.GetById;
 using Application.Services.Products.Queries;
 using AutoMapper;
 using Domain.Dtos;

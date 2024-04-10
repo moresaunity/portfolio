@@ -38,3 +38,4 @@ C:\Users\moresabj\source\repos\portfolio\Persistance\obj\Debug\net8.0\Persistanc
 C:\Users\moresabj\source\repos\portfolio\Persistance\obj\Debug\net8.0\ref\Persistance.dll
 C:\Users\moresabj\source\repos\portfolio\Persistance\bin\Debug\net8.0\Common.dll
 C:\Users\moresabj\source\repos\portfolio\Persistance\bin\Debug\net8.0\Common.pdb
+C:\Users\moresabj\source\repos\portfolio\Persistance\obj\Debug\net8.0\Persistance.sourcelink.json

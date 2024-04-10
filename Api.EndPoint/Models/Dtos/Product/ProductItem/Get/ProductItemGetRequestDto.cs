@@ -1,6 +1,6 @@
 ﻿using Application.Services.Products.Queries;
 
-namespace Api.EndPoint.Models.Dtos.Product.ProductItem
+namespace Api.EndPoint.Models.Dtos.Product.ProductItem.Get
 {
     public class ProductItemGetRequestDto
     {

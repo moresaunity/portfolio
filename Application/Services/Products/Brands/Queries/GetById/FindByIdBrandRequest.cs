@@ -1,9 +1,9 @@
 ﻿using Application.Interfaces.Contexts;
 using MediatR;
 
-namespace Aplication.Services.Brands.Queries
+namespace Application.Services.Products.Brands.Queries.GetById
 {
-    public class FindByIdBrandRequest: IRequest<FindByIdBrandDto>
+    public class FindByIdBrandRequest : IRequest<FindByIdBrandDto>
     {
         public int Id;
 

@@ -30,3 +30,4 @@ C:\Users\moresabj\source\repos\portfolio\Application\obj\Debug\net8.0\Applicatio
 C:\Users\moresabj\source\repos\portfolio\Application\obj\Debug\net8.0\ref\Application.dll
 C:\Users\moresabj\source\repos\portfolio\Application\bin\Debug\net8.0\Common.dll
 C:\Users\moresabj\source\repos\portfolio\Application\bin\Debug\net8.0\Common.pdb
+C:\Users\moresabj\source\repos\portfolio\Application\obj\Debug\net8.0\Application.sourcelink.json
