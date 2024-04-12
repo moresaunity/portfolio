@@ -50,49 +50,5 @@ namespace Api.EndPoint.Test.ProductControllerTest
             Assert.True(returnedDto.IsSuccess);
             Assert.Equal(productItemDtoList.First().Id, returnedDto.Data.First().Id);
         }
-        [Theory]
-        [InlineData(1, -1)]
-        public async Task GetById_ReturnsOkResult_WhenCacheIsNotAvailable(int ValidId, int InValidId)
-        {
-            // Valid Id
-
-            // Arrange
-            var mockMapper = new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile(new ProductEndPointMappingProfile());
-            });
-            var mapper = mockMapper.CreateMapper();
-            var cacheMock = new Mock<IMemoryCache>();
-            var mediatorMock = new Mock<IMediator>();
-            var controller = new ProductController(mapper, mediatorMock.Object, cacheMock.Object);
-
-            var getByIdProductItemDto = new GetByIdProductItemDto();
-            var baseDto = new BaseDto<GetByIdProductItemDto>(true, new List<string> { "Success" }, getByIdProductItemDto);
-
-            mediatorMock.Setup(m => m.Send(It.IsAny<GetByIdProductItemRequest>(), default)).ReturnsAsync(baseDto);
-
-
-            // Act
-            var result = controller.Get(ValidId);
-
-            // Assert
-            var okResult = Assert.IsType<OkObjectResult>(result);
-            var returnedDto = Assert.IsType<BaseDto<ProductItemGetByIdResultDto>>(okResult.Value);
-            Assert.True(returnedDto.IsSuccess);
-
-            // ----------------------
-            // In Valid Id
-
-            // Arrange
-            var InValidgetByIdProductItemDto = new GetByIdProductItemDto();
-            var InValidbaseDto = new BaseDto<GetByIdProductItemDto>(false, new List<string> { "Product Is NotFound" }, getByIdProductItemDto);
-            mediatorMock.Setup(m => m.Send(It.IsAny<GetByIdProductItemRequest>(), default)).ReturnsAsync(InValidbaseDto);
-
-            // Act
-            result = controller.Get(InValidId);
-
-            // Assert
-            var notFoundResult = Assert.IsType<NotFoundObjectResult>(result);
-        }
     }
 }

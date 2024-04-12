@@ -18,6 +18,35 @@
             </summary>
             <returns>Brands</returns>
         </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.Get(System.Int32)">
+            <summary>
+            Get By Id Brand
+            </summary>
+            <param name="id">Brand Id</param>
+            <returns>Brand</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.Post(System.String)">
+            <summary>
+            Add a New Brand
+            </summary>
+            <param name="brand">Brand Name</param>
+            <returns>Brand</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.Put(System.Int32,System.String)">
+            <summary>
+            Edit By Id Brand
+            </summary>
+            <param name="id">Brand Id</param>
+            <param name="brand">Brand Name</param>
+            <returns>Brand</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.Delete(System.Int32)">
+            <summary>
+            Delete Brand By Id
+            </summary>
+            <param name="id">Brand Id</param>
+            <returns>Brand</returns>
+        </member>
         <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.GenerateLink(System.Int32)">
             <summary>
             Generate Link for this Controller Methodes

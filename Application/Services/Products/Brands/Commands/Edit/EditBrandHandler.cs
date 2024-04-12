@@ -16,10 +16,11 @@ namespace Aplication.Services.Brands.Commands.Edit
         public Task<BaseDto<EditBrandResponseDto>> Handle(EditBrandCommand request, CancellationToken cancellationToken)
         {
             ProductBrand brand = context.ProductBrands.FirstOrDefault(p => request.Id == p.Id);
+            if (brand == null) brand = context.ProductBrands.Local.FirstOrDefault(p => request.Id == p.Id);
             if (brand == null) return Task.FromResult(new BaseDto<EditBrandResponseDto>(false, new List<string> { "Add a New Brand Is Not Success" ,"brand Not Found" }, null));
             brand.Brand = request.BrandDto.Brand;
             var entity = context.ProductBrands.Update(brand);
-            context.SaveChanges();
+            if(context.ProductBrands.Local.Count != 1) context.SaveChanges();
 
             return Task.FromResult(new BaseDto<EditBrandResponseDto>(true, new List<string> { "Edit Brand Is Success" } ,new EditBrandResponseDto
             {

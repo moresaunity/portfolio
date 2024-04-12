@@ -12,6 +12,84 @@
             <param name="status">Status</param>
             <returns></returns>
         </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.Get">
+            <summary>
+            Get All Brands
+            </summary>
+            <returns>Brands</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.Get(System.Int32)">
+            <summary>
+            Get By Id Brand
+            </summary>
+            <param name="id">Brand Id</param>
+            <returns>Brand</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.Post(System.String)">
+            <summary>
+            Add a New Brand
+            </summary>
+            <param name="brand">Brand Name</param>
+            <returns>Brand</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.Put(System.Int32,System.String)">
+            <summary>
+            Edit By Id Brand
+            </summary>
+            <param name="id">Brand Id</param>
+            <param name="brand">Brand Name</param>
+            <returns>Brand</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.Delete(System.Int32)">
+            <summary>
+            Delete Brand By Id
+            </summary>
+            <param name="id">Brand Id</param>
+            <returns>Brand</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductBrandController.GenerateLink(System.Int32)">
+            <summary>
+            Generate Link for this Controller Methodes
+            </summary>
+            <param name="Id">Brand Id</param>
+            <returns>List Links</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductController.Get(Api.EndPoint.Models.Dtos.Product.ProductItem.Get.ProductItemGetRequestDto)">
+            <summary>
+            Get All Products
+            </summary>
+            <param name="request">Information</param>
+            <returns>Products</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductController.Get(System.Int32)">
+            <summary>
+            Get By Id Product
+            </summary>
+            <param name="id">Product Id</param>
+            <returns>Product</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductController.Post(Api.EndPoint.Models.Dtos.Product.ProductItem.Post.ProductItemPostRequestDto)">
+            <summary>
+            Add New Product
+            </summary>
+            <param name="request">Product Information</param>
+            <returns>Information</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductController.Put(System.Int32,Api.EndPoint.Models.Dtos.Product.ProductItem.Put.ProductItemPutRequestDto)">
+            <summary>
+            Edit Product
+            </summary>
+            <param name="id">Porduct Id</param>
+            <param name="request">Porduct Information</param>
+            <returns>Product</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductController.Delete(System.Int32)">
+            <summary>
+            Delete Product By Id
+            </summary>
+            <param name="id">Product Id</param>
+            <returns>Information</returns>
+        </member>
         <member name="M:Api.EndPoint.Controllers.V1.Product.ProductController.GenerateLink(System.Int32)">
             <summary>
             Generate Link for this Controller Methodes

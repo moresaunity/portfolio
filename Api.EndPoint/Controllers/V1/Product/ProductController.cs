@@ -112,7 +112,7 @@ namespace Api.EndPoint.Controllers.V1.Product
 			if (!mediateResult.IsSuccess)
 				return BadRequest(new BaseDto<int>(false, mediateResult.Message, 0));
 
-			cache.Remove(CacheKey);
+			if(cache != null) cache.Remove(CacheKey);
 			return Ok(mediateResult);
 		}
 
@@ -131,10 +131,10 @@ namespace Api.EndPoint.Controllers.V1.Product
 			BaseDto<EditProductItemResultDto> mediateResult = mediator.Send(command).Result;
 			if (!mediateResult.IsSuccess) return BadRequest(new BaseDto<ProductItemPutResultDto>(false, mediateResult.Message, null));
 
-			BaseDto<ProductItemPutResultDto> result = new BaseDto<ProductItemPutResultDto>(true, new List<string> { "Edit Product Is Success" }, mapper.Map<ProductItemPutResultDto>(mediateResult.Data));
-			result.Data.Links = GenerateLink(result.Data.Id);
+			BaseDto<ProductItemPutResultDto> result = new BaseDto<ProductItemPutResultDto>(true, mediateResult.Message, mapper.Map<ProductItemPutResultDto>(mediateResult.Data));
+            if (cache != null) result.Data.Links = GenerateLink(result.Data.Id);
 
-			cache.Remove(CacheKey);
+			if(cache != null) cache.Remove(CacheKey);
 			return Ok(result);
 		}
 
@@ -151,7 +151,7 @@ namespace Api.EndPoint.Controllers.V1.Product
 			BaseDto result = mediator.Send(command).Result;
 			if (!result.IsSuccess) return BadRequest(new BaseDto(false, result.Message));
 
-			cache.Remove(CacheKey);
+            if (cache != null) cache.Remove(CacheKey);
 			return Ok(new BaseDto(true, result.Message));
 		}
 		/// <summary>

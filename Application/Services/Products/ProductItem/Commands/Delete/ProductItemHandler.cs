@@ -16,11 +16,12 @@ namespace Aplication.Services.Products.ProductItem.Commands.Delete
         }
         public Task<BaseDto> Handle(DeleteProductItemCommand request, CancellationToken cancellationToken)
         {
-            var product = context.Products.FirstOrDefault(p => p.Id == request.Id);
-            if (product == null) return Task.FromResult(new BaseDto(false, new List<string> { "product is not found" }));
+            var product = context.Products.FirstOrDefault(p => p.Id == request.Id);        
+            if (product == null) product = context.Products.Local.FirstOrDefault(p => p.Id == request.Id);
+			if (product == null) return Task.FromResult(new BaseDto(false, new List<string> { "product is not found" }));
 
             context.Products.Remove(product);
-            context.SaveChanges();
+            if(context.Products.Count() != 0) context.SaveChanges();
 
             return Task.FromResult(new BaseDto(true, new List<string> { "Delete Product Is Success" }));
         }

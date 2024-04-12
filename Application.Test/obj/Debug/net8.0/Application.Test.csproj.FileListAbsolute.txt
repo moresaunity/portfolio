@@ -161,3 +161,4 @@ C:\Users\moresabj\source\repos\portfolio\Application.Test\obj\Debug\net8.0\refin
 C:\Users\moresabj\source\repos\portfolio\Application.Test\obj\Debug\net8.0\Application.Test.pdb
 C:\Users\moresabj\source\repos\portfolio\Application.Test\obj\Debug\net8.0\Application.Test.genruntimeconfig.cache
 C:\Users\moresabj\source\repos\portfolio\Application.Test\obj\Debug\net8.0\ref\Application.Test.dll
+C:\Users\moresabj\source\repos\portfolio\Application.Test\obj\Debug\net8.0\Application.Test.sourcelink.json

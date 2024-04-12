@@ -48,13 +48,13 @@ namespace Api.EndPoint.Controllers.V1.Product
 				if (MediateResult == null || !MediateResult.IsSuccess) return BadRequest(new BaseDto<List<ProductBrandGetResultDto>>(false, MediateResult.Message, null));
 
 				result = mapper.Map<List<ProductBrandGetResultDto>>(MediateResult.Data);
-				foreach (var item in result) item.Links = GenerateLink(item.Id);
+                if (cache != null) foreach (var item in result) item.Links = GenerateLink(item.Id);
 
 				var cacheOptions = new MemoryCacheEntryOptions()
 					.SetSlidingExpiration(TimeSpan.FromMinutes(1))
 					.RegisterPostEvictionCallback(CacheCallBack, this)
 					.SetSize(1);
-				cache.Set(CacheKey, result, cacheOptions);
+                if (cache != null) cache.Set(CacheKey, result, cacheOptions);
 			}
 			else result = (List<ProductBrandGetResultDto>)cache.Get(CacheKey);
 
@@ -72,7 +72,7 @@ namespace Api.EndPoint.Controllers.V1.Product
 			BaseDto<FindByIdBrandDto> mediateResult = mediator.Send(request).Result;
 			if(!mediateResult.IsSuccess) return NotFound(mediateResult);
 			ProductBrandGetResultDto result = mapper.Map<ProductBrandGetResultDto>(mediateResult.Data);
-			result.Links = GenerateLink(result.Id);
+            if (cache != null) result.Links = GenerateLink(result.Id);
 			return Ok(new BaseDto<ProductBrandGetResultDto>(true, mediateResult.Message, result));
 		}
 		/// <summary>
@@ -88,8 +88,8 @@ namespace Api.EndPoint.Controllers.V1.Product
 			BaseDto<SendBrandResponseDto> mediateResult = mediator.Send(request).Result;
 			if (!mediateResult.IsSuccess) return BadRequest(mediateResult);
 			ProductBrandGetResultDto result = mapper.Map<ProductBrandGetResultDto>(mediateResult.Data);
-			result.Links = GenerateLink(result.Id);
-			cache.Remove(CacheKey);
+            if (cache != null) result.Links = GenerateLink(result.Id);
+            if (cache != null) cache.Remove(CacheKey);
 			return Ok(new BaseDto<ProductBrandGetResultDto>(true, mediateResult.Message, result));
 		}
 		/// <summary>
@@ -106,8 +106,8 @@ namespace Api.EndPoint.Controllers.V1.Product
 			BaseDto<EditBrandResponseDto> mediateResult = mediator.Send(request).Result;
 			if (!mediateResult.IsSuccess) return NotFound(mediateResult);
 			ProductBrandGetResultDto result = mapper.Map<ProductBrandGetResultDto>(mediateResult.Data);
-			result.Links = GenerateLink(result.Id);
-			cache.Remove(CacheKey);
+            if (cache != null) result.Links = GenerateLink(result.Id);
+            if (cache != null) cache.Remove(CacheKey);
 			return Ok(new BaseDto<ProductBrandGetResultDto>(true, mediateResult.Message, result));
 		}
 		/// <summary>
@@ -122,7 +122,7 @@ namespace Api.EndPoint.Controllers.V1.Product
 			BaseDto<DeleteBrandResponseDto> mediateResult = mediator.Send(request).Result;
 			if (!mediateResult.IsSuccess) return NotFound(mediateResult);
 			ProductBrandGetResultDto result = mapper.Map<ProductBrandGetResultDto>(mediateResult.Data);
-			cache.Remove(CacheKey);
+            if (cache != null) cache.Remove(CacheKey);
 			return Ok(new BaseDto<ProductBrandGetResultDto>(true, mediateResult.Message, result));
 		}
 		/// <summary>

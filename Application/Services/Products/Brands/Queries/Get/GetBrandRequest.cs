@@ -23,8 +23,14 @@ namespace Application.Services.Products.Brands.Queries.Get
                 Id = p.Id,
                 Brand = p.Brand
             })?.ToList();
+            if (Brand.Count == 0) Brand = context.ProductBrands?.Local.Select(p => new GetBrandDto
+            {
+                Id = p.Id,
+                Brand = p.Brand
+            })?.ToList();
+
             if (Brand == null) return Task.FromResult(new BaseDto<List<GetBrandDto>>(false, new List<string> { "Brand Is Empty" }, null));
-            return Task.FromResult(new BaseDto<List<GetBrandDto>>(true, new List<string> { "Get Products Is Success" }, Brand));
+            return Task.FromResult(new BaseDto<List<GetBrandDto>>(true, new List<string> { "Get Brands Is Success" }, Brand));
         }
     }
 
