@@ -58,10 +58,10 @@ namespace Api.EndPoint.Controllers.V1.Product
 				if (!mediateResult.IsSuccess)
 					return BadRequest(new BaseDto(false, mediateResult.Message));
 
-				var resultDto = mapper.Map<List<ProductItemGetResultDto>>(mediateResult.Data);
+                List<ProductItemGetResultDto> resultDto = mapper.Map<List<ProductItemGetResultDto>>(mediateResult.Data);
 				result = new BaseDto<List<ProductItemGetResultDto>>(true, mediateResult.Message, resultDto);
 
-				var cacheOptions = new MemoryCacheEntryOptions()
+                MemoryCacheEntryOptions cacheOptions = new MemoryCacheEntryOptions()
 					.SetSlidingExpiration(TimeSpan.FromMinutes(1))
 					.RegisterPostEvictionCallback(CacheCallBack, this)
 					.SetSize(1);
@@ -91,8 +91,8 @@ namespace Api.EndPoint.Controllers.V1.Product
 			if (!mediateResult.IsSuccess)
 				return NotFound(new BaseDto(false, mediateResult.Message));
 
-			var resultDto = mapper.Map<ProductItemGetByIdResultDto>(mediateResult.Data);
-			var result = new BaseDto<ProductItemGetByIdResultDto>(true, mediateResult.Message, resultDto);
+            ProductItemGetByIdResultDto resultDto = mapper.Map<ProductItemGetByIdResultDto>(mediateResult.Data);
+            BaseDto<ProductItemGetByIdResultDto> result = new BaseDto<ProductItemGetByIdResultDto>(true, mediateResult.Message, resultDto);
 
 			return Ok(result);
 		}

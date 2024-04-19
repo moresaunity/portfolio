@@ -1,6 +1,6 @@
 ﻿using Domain.Attributes;
 using Domain.Discounts;
-using Domain.Order;
+using Domain.Products.Order;
 
 namespace Domain.Products
 {
