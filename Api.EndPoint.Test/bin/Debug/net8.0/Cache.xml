@@ -97,6 +97,45 @@
             <param name="Id">Brand Id</param>
             <returns>List Links</returns>
         </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductFavouriteController.Get(System.Int32,System.Int32)">
+            <summary>
+            Get All Favourites
+            </summary>
+            <param name="page">Page Index</param>
+            <param name="pageSize">Page Size</param>
+            <returns>All Favourites</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductFavouriteController.Get(System.Int32)">
+            <summary>
+            Get Favorite By Id
+            </summary>
+            <param name="id">Favorite Id</param>
+            <returns>Favorite</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductFavouriteController.Post(System.Int32,System.String)">
+            <summary>
+            Add New Favorite
+            </summary>
+            <param name="ProductId">Product Id</param>
+            <param name="UserId">User Id</param>
+            <returns>Favorite Information</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductFavouriteController.Put(System.Int32,System.Int32,System.String)">
+            <summary>
+            Edit Favorite
+            </summary>
+            <param name="id">Favorite Id</param>
+            <param name="ProductId">Product Id</param>
+            <param name="UserId">User Id</param>
+            <returns>Favorite Information</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductFavouriteController.Delete(System.Int32)">
+            <summary>
+            Delete Favorite
+            </summary>
+            <param name="id">Favorite Id</param>
+            <returns>Favorite Information</returns>
+        </member>
         <member name="M:Api.EndPoint.Controllers.V1.UserController.Get">
             <summary>
             Get All Users

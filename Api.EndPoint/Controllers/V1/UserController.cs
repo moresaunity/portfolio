@@ -43,18 +43,18 @@ namespace Api.EndPoint.Controllers.V1
             {
                 userModels = new List<ReturnLoginViewModel>();
 
-                var users = await _userManager.Users.ToListAsync();
+                List<User> users = await _userManager.Users.ToListAsync();
                 foreach (var item in users)
                 {
-                    var roles = (await _userManager.GetRolesAsync(item)).ToList();
-                    var user = mapper.Map<ReturnLoginViewModel>(item);
+                    List<string> roles = (await _userManager.GetRolesAsync(item)).ToList();
+                    ReturnLoginViewModel user = mapper.Map<ReturnLoginViewModel>(item);
                     user.Links = GenerateLinks(item.Id);
                     user.Roles = roles;
 
                     userModels.Add(user);
                 }
 
-                var cacheOptions = new MemoryCacheEntryOptions()
+                MemoryCacheEntryOptions cacheOptions = new MemoryCacheEntryOptions()
                     .SetSlidingExpiration(TimeSpan.FromMinutes(1))
                     .RegisterPostEvictionCallback(CacheCallBack, this)
                     .SetSize(1);
@@ -75,11 +75,11 @@ namespace Api.EndPoint.Controllers.V1
         [Authorize(Roles = "Admin,Operator")]
         public async Task<IActionResult> Get(string id)
         {
-            var user = await _userManager.FindByIdAsync(id);
+            User? user = await _userManager.FindByIdAsync(id);
             if (user == null)
                 return NotFound(new BaseDto(false, new List<string> { "User Not Found" }));
-            var roles = (await _userManager.GetRolesAsync(user)).ToList();
-            var result = mapper.Map<ReturnLoginViewModel>(user);
+            List<string> roles = (await _userManager.GetRolesAsync(user)).ToList();
+            ReturnLoginViewModel result = mapper.Map<ReturnLoginViewModel>(user);
             result.Links = GenerateLinks(result.Id);
             result.Roles = roles;
 
@@ -98,7 +98,7 @@ namespace Api.EndPoint.Controllers.V1
 
             string Token = Authorization.Replace("Bearer ", "");
             SecurityHasher hasher = new SecurityHasher();
-            var user = await _userManager.FindByLoginAsync("none", hasher.HashPassword(Token));
+            User? user = await _userManager.FindByLoginAsync("none", hasher.HashPassword(Token));
 
             if (user == null)
                 return NotFound(new BaseDto(false, new List<string> { "User Not Found!" }));
@@ -115,12 +115,12 @@ namespace Api.EndPoint.Controllers.V1
         /// <param name="id">User Id</param>
         /// <param name="model">User information</param>
         /// <returns>Message</returns>
-        [HttpPut("edit/{id}")]
+        [HttpPut("{id}")]
         [Authorize(Roles = "Admin,Operator")]
         public async Task<IActionResult> Put(string id, [FromBody] AccountDto model)
         {
             List<string> errors = new List<string>();
-            var user = await _userManager.FindByIdAsync(id);
+            User? user = await _userManager.FindByIdAsync(id);
             if (user == null)
                 return NotFound(new BaseDto(false, new List<string> { "User Not Found!" }));
 
@@ -128,7 +128,7 @@ namespace Api.EndPoint.Controllers.V1
             user.PhoneNumber = model.PhoneNumber;
             user.Email = model.Email;
 
-            var result = await _userManager.UpdateAsync(user);
+            IdentityResult result = await _userManager.UpdateAsync(user);
             if (result.Succeeded)
             {
                 cache.Remove(CacheKey);
@@ -149,16 +149,16 @@ namespace Api.EndPoint.Controllers.V1
         /// </summary>
         /// <param name="id">User Id</param>
         /// <returns>Message</returns>
-        [HttpDelete("delete/{id}")]
+        [HttpDelete("{id}")]
         [Authorize(Roles = "Admin,Operator")]
         public async Task<IActionResult> Delete(string id)
         {
             List<string> errors = new List<string>();
-            var user = await _userManager.FindByIdAsync(id);
+            User? user = await _userManager.FindByIdAsync(id);
             if (user == null)
                 return NotFound(new BaseDto(false, new List<string> { "User Not Found!" }));
 
-            var result = await _userManager.DeleteAsync(user);
+            IdentityResult result = await _userManager.DeleteAsync(user);
             if (result.Succeeded)
             {
                 cache.Remove(CacheKey);

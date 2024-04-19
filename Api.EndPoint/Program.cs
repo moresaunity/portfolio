@@ -15,7 +15,7 @@ using Aplication.Services.Products.ProductItem.Commands.Create;
 using Application.Services.Products.Favourites.Queries;
 using Application.Services.UriComposer;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -70,7 +70,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 #region Connection String
-var ContectionString = builder.Configuration["ConnectionString:SqlServer"];
+string ContectionString = builder.Configuration["ConnectionString:SqlServer"];
 builder.Services.AddScoped<IDataBaseContext, DataBaseContext>();
 builder.Services.AddScoped<IIdentityDataBaseContext, IdentityDataBaseContext>();
 builder.Services.AddEntityFrameworkSqlServer().AddDbContext<DataBaseContext>(option => option.UseSqlServer(ContectionString, sqlServerOptionsAction: sqlOptions =>
@@ -95,7 +95,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(options => {
 
-    var security = new OpenApiSecurityScheme
+    OpenApiSecurityScheme security = new OpenApiSecurityScheme
     {
         Name = "JWT Auth",
         Description = "Enter your token.",

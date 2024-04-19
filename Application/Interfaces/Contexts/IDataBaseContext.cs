@@ -1,6 +1,6 @@
 ﻿using Domain.Discounts;
-using Domain.Order;
 using Domain.Products;
+using Domain.Products.Order;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

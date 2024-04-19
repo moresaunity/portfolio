@@ -1,8 +1,8 @@
 ﻿using Application.Interfaces.Contexts;
 using Domain.Attributes;
 using Domain.Discounts;
-using Domain.Order;
 using Domain.Products;
+using Domain.Products.Order;
 using Microsoft.EntityFrameworkCore;
 using Persistence.EntityConfigurations;
 using System;

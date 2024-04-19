@@ -37,7 +37,7 @@ namespace Api.EndPoint.Controllers.V1
             {
                 return BadRequest(ModelState);
             }
-            var user = await _userManager.FindByNameAsync(model.PhoneNumber);
+            User user = await _userManager.FindByNameAsync(model.PhoneNumber);
             string status = "";
 
             if (user == null)
@@ -49,7 +49,7 @@ namespace Api.EndPoint.Controllers.V1
                     Email = model.Email
                 };
 
-                var result = await _userManager.CreateAsync(newUser, model.Password);
+                IdentityResult result = await _userManager.CreateAsync(newUser, model.Password);
                 if (!result.Succeeded)
                 {
                     string message = "";
@@ -60,7 +60,7 @@ namespace Api.EndPoint.Controllers.V1
                     return Ok(new AccountResultDto { IsSuccess = false, Message = message });
                 }
 
-                var roleResult = await _userManager.AddToRoleAsync(newUser, "User");
+                IdentityResult roleResult = await _userManager.AddToRoleAsync(newUser, "User");
                 if (!roleResult.Succeeded)
                 {
                     string message = "";
@@ -82,7 +82,7 @@ namespace Api.EndPoint.Controllers.V1
                 {
                     return Ok(new AccountResultDto { IsSuccess = false, Message = "شما غیر فعال هستید و اجازه دسترسی ندارید." });
                 }
-                var signInResult = await _signInManager.PasswordSignInAsync(user, model.Password, model.IsPersistent, true);
+                Microsoft.AspNetCore.Identity.SignInResult signInResult = await _signInManager.PasswordSignInAsync(user, model.Password, model.IsPersistent, true);
                 if (!signInResult.Succeeded)
                 {
                     if (signInResult.RequiresTwoFactor)
@@ -164,10 +164,10 @@ namespace Api.EndPoint.Controllers.V1
             var role = await _userManager.GetRolesAsync(user);
 
             var claims = new List<Claim>
-    {
-        new Claim("UserId", user.Id),
-        new Claim("Email", user.Email),
-    };
+            {
+                new Claim("UserId", user.Id),
+                new Claim("Email", user.Email),
+            };
             foreach (var claim in role)
             {
                 claims.Add(new Claim(ClaimTypes.Role, claim ?? "User"));
@@ -177,8 +177,8 @@ namespace Api.EndPoint.Controllers.V1
             var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
             var credentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
 
-            var tokenExp = DateTime.Now.AddDays(int.Parse(configuration["JWtConfig:expires"]));
-            var token = new JwtSecurityToken(
+            DateTime tokenExp = DateTime.Now.AddDays(int.Parse(configuration["JWtConfig:expires"]));
+            JwtSecurityToken token = new JwtSecurityToken(
                 issuer: configuration["JWtConfig:issuer"],
                 audience: configuration["JWtConfig:audience"],
                 expires: tokenExp,
@@ -186,10 +186,10 @@ namespace Api.EndPoint.Controllers.V1
                 claims: claims,
                 signingCredentials: credentials
             );
-            var jwtToken = new JwtSecurityTokenHandler().WriteToken(token);
+            string jwtToken = new JwtSecurityTokenHandler().WriteToken(token);
 
             SecurityHasher hasher = new SecurityHasher();
-            var tokenAdded = await _userManager.SetAuthenticationTokenAsync(user, "none", "jwtToken", hasher.HashPassword(jwtToken));
+            IdentityResult tokenAdded = await _userManager.SetAuthenticationTokenAsync(user, "none", "jwtToken", hasher.HashPassword(jwtToken));
             if (!tokenAdded.Succeeded)
             {
                 return "false";

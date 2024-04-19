@@ -1,4 +1,4 @@
-﻿using Domain.Order;
+﻿using Domain.Products.Order;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ namespace Domain.Discounts
         public DateTime CreatedOn { get; set; }
         public virtual Discount Discount { get; set; }
         public int DiscountId { get; set; }
-        public virtual Order.Order Order { get; set; }
+        public virtual Order Order { get; set; }
         public int OrderId { get; set; }
     }
 }
