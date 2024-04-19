@@ -1,6 +1,5 @@
 ﻿using Api.EndPoint.Models.Dtos;
 using Api.EndPoint.Models.Dtos.Product.Brand.Get;
-using Api.EndPoint.Models.Dtos.Product.ProductItem.Get;
 using Aplication.Services.Brands.Commands.Delete;
 using Aplication.Services.Brands.Commands.Edit;
 using Aplication.Services.Products.Brands.Commands.Send;
@@ -9,10 +8,8 @@ using Application.Services.Products.Brands.Queries.GetById;
 using AutoMapper;
 using Domain.Dtos;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Identity.Client;
 
 namespace Api.EndPoint.Controllers.V1.Product
 {
@@ -50,7 +47,7 @@ namespace Api.EndPoint.Controllers.V1.Product
 				result = mapper.Map<List<ProductBrandGetResultDto>>(MediateResult.Data);
                 if (cache != null) foreach (var item in result) item.Links = GenerateLink(item.Id);
 
-				var cacheOptions = new MemoryCacheEntryOptions()
+                MemoryCacheEntryOptions cacheOptions = new MemoryCacheEntryOptions()
 					.SetSlidingExpiration(TimeSpan.FromMinutes(1))
 					.RegisterPostEvictionCallback(CacheCallBack, this)
 					.SetSize(1);

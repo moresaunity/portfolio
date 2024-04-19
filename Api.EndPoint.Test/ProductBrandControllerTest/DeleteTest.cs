@@ -16,13 +16,13 @@ namespace Api.EndPoint.Test.ProductControllerBrandTest
         public async Task Handle_Should_Delete_Brand_Action_Delete_Successfully()
         {
             // Arrange
-            var mockMapper = new MapperConfiguration(cfg =>
+            MapperConfiguration mockMapper = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new ProductEndPointMappingProfile());
             });
-            var mapper = mockMapper.CreateMapper();
-            var mediatorMock = new Mock<IMediator>();
-            var controller = new ProductBrandController(mediatorMock.Object, mapper, null);
+            IMapper mapper = mockMapper.CreateMapper();
+            Mock<IMediator> mediatorMock = new Mock<IMediator>();
+            ProductBrandController controller = new ProductBrandController(mediatorMock.Object, mapper, null);
 
             DeleteBrandResponseDto dto = new DeleteBrandResponseDto 
             {
@@ -32,11 +32,11 @@ namespace Api.EndPoint.Test.ProductControllerBrandTest
             mediatorMock.Setup(m => m.Send(It.IsAny<DeleteBrandCommand>(), default)).ReturnsAsync(new BaseDto<DeleteBrandResponseDto>(true, new List<string> { "Delete Brand Is Success" }, dto));
 
             // Act
-            var result = controller.Delete(1);
+            IActionResult result = controller.Delete(1);
 
             // Assert
-            var okResult = Assert.IsType<OkObjectResult>(result);
-            var returnedDto = Assert.IsType<BaseDto<ProductBrandGetResultDto>>(okResult.Value);
+            OkObjectResult okResult = Assert.IsType<OkObjectResult>(result);
+            BaseDto<ProductBrandGetResultDto> returnedDto = Assert.IsType<BaseDto<ProductBrandGetResultDto>>(okResult.Value);
             Assert.True(returnedDto.IsSuccess);
             Assert.Equal("Delete Brand Is Success", returnedDto.Message.First());
         }

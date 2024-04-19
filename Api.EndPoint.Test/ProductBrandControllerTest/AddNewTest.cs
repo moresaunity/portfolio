@@ -19,29 +19,29 @@ namespace Api.EndPoint.Test.ProductControllerBrandTest
         public async Task Handle_Should_Add_Brand_Action_Post_Successfully()
         {
             // Arrange
-            var mockMapper = new MapperConfiguration(cfg =>
+            MapperConfiguration mockMapper = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new ProductEndPointMappingProfile());
             });
-            var mapper = mockMapper.CreateMapper();
-            var mediatorMock = new Mock<IMediator>();
-            var controller = new ProductBrandController(mediatorMock.Object, mapper, null);
+            IMapper mapper = mockMapper.CreateMapper();
+            Mock<IMediator> mediatorMock = new Mock<IMediator>();
+            ProductBrandController controller = new ProductBrandController(mediatorMock.Object, mapper, null);
 
             SendBrandResponseDto requestdto = new SendBrandResponseDto 
             {
                 Id = 1,
                 Brand = "test"
             };
-            var baseDto = new BaseDto<SendBrandResponseDto>(true, new List<string> { "Add a New Brand Is Success" }, requestdto);
+            BaseDto<SendBrandResponseDto> baseDto = new BaseDto<SendBrandResponseDto>(true, new List<string> { "Add a New Brand Is Success" }, requestdto);
 
             mediatorMock.Setup(m => m.Send(It.IsAny<SendBrandCommand>(), default)).ReturnsAsync(baseDto);
 
             // Act
-            var result = controller.Post("test");
+            IActionResult result = controller.Post("test");
 
             // Assert
-            var okResult = Assert.IsType<OkObjectResult>(result);
-            var returnedDto = Assert.IsType<BaseDto<ProductBrandGetResultDto>>(okResult.Value);
+            OkObjectResult okResult = Assert.IsType<OkObjectResult>(result);
+            BaseDto<ProductBrandGetResultDto> returnedDto = Assert.IsType<BaseDto<ProductBrandGetResultDto>>(okResult.Value);
             Assert.True(returnedDto.IsSuccess);
             Assert.Equal("Add a New Brand Is Success", returnedDto.Message.First());
         }
