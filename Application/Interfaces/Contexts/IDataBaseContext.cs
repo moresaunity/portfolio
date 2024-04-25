@@ -1,4 +1,5 @@
-﻿using Domain.Discounts;
+﻿using Domain.ChatRoom;
+using Domain.Discounts;
 using Domain.Products;
 using Domain.Products.Order;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,8 @@ namespace Application.Interfaces.Contexts
         DbSet<Discount> Discounts { get; set; }
         DbSet<DiscountUsageHistory> DiscountUsageHistorys { get; set; }
         DbSet<ProductItemFavourite> ProductItemFavourites { get; set; }
+        DbSet<ChatRoom> ChatRooms { get; set; }
+        DbSet<ChatMessage> ChatMessages { get; set; }
 
         int SaveChanges();
         int SaveChanges(bool acceptAllChangesOnSuccess);

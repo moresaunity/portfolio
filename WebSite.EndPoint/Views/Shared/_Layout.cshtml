@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - WebSite.EndPoint</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/chatbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/WebSite.EndPoint.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -30,20 +32,20 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+
+    @RenderBody()
 
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - WebSite.EndPoint - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "15e84193-4cd1-4612-8a06-883354bc76b0"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/signalrservice.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

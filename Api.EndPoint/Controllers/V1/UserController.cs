@@ -22,13 +22,15 @@ namespace Api.EndPoint.Controllers.V1
         private readonly IMemoryCache cache;
         private readonly UserManager<User> _userManager;
         private readonly IMapper mapper;
+        private readonly ILogger<UserController> logger;
 
         private readonly string CacheKey = "Users";
-        public UserController(UserManager<User> userManager, IMapper mapper, IMemoryCache cache)
+        public UserController(UserManager<User> userManager, IMapper mapper, IMemoryCache cache, ILogger<UserController> logger)
         {
             _userManager = userManager;
             this.mapper = mapper;
             this.cache = cache;
+            this.logger = logger;
         }
         /// <summary>
         /// Get All Users
@@ -38,6 +40,7 @@ namespace Api.EndPoint.Controllers.V1
         [Authorize(Roles = "Admin,Operator")]
         public async Task<IActionResult> Get()
         {
+            logger.LogInformation("This Is a Error");
             List<ReturnLoginViewModel> userModels = new List<ReturnLoginViewModel>();
             if (!cache.TryGetValue(CacheKey, out userModels))
             {
@@ -60,7 +63,7 @@ namespace Api.EndPoint.Controllers.V1
                     .SetSize(1);
 
                 cache.Set(CacheKey, userModels, cacheOptions);
-            } 
+            }
             else userModels = (List<ReturnLoginViewModel>)cache.Get(CacheKey);
 
             return Ok(new BaseDto<List<ReturnLoginViewModel>>(true, new List<string> { "Get Users Is Success" }, userModels));

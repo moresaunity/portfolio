@@ -95,7 +95,7 @@
             Generate Link for this Controller Methodes
             </summary>
             <param name="Id">Brand Id</param>
-            <returns>List Links</returns>
+            <returns>List Links</returns>	
         </member>
         <member name="M:Api.EndPoint.Controllers.V1.Product.ProductFavouriteController.Get(System.Int32,System.Int32)">
             <summary>

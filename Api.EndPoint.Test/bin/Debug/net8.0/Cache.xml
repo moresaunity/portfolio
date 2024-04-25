@@ -95,7 +95,7 @@
             Generate Link for this Controller Methodes
             </summary>
             <param name="Id">Brand Id</param>
-            <returns>List Links</returns>
+            <returns>List Links</returns>	
         </member>
         <member name="M:Api.EndPoint.Controllers.V1.Product.ProductFavouriteController.Get(System.Int32,System.Int32)">
             <summary>
@@ -135,6 +135,50 @@
             </summary>
             <param name="id">Favorite Id</param>
             <returns>Favorite Information</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductTypeController.Get(System.Int32,System.Int32)">
+            <summary>
+            Get All Product Types
+            </summary>
+            <param name="page">Page Index</param>
+            <param name="pageSize">Page Size</param>
+            <returns>Product Types</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductTypeController.Get(System.Int32)">
+            <summary>
+            Get Product Type By Id
+            </summary>
+            <param name="id">Product Type Id</param>
+            <returns>Product Type</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductTypeController.Post(Api.EndPoint.Models.Dtos.Product.Type.AddNew.AddNewProductTypeRequestDto)">
+            <summary>
+            Add New Product Type
+            </summary>
+            <param name="request">Product Type Information</param>
+            <returns>Product Type</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductTypeController.Put(System.Int32,Api.EndPoint.Models.Dtos.Product.Type.Edit.EditProductTypeRequestDto)">
+            <summary>
+            Edit Poduct Type
+            </summary>
+            <param name="id">Product Type Id</param>
+            <param name="request">Product Type Information</param>
+            <returns>Product Type</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductTypeController.Delete(System.Int32)">
+            <summary>
+            Delete Product Type
+            </summary>
+            <param name="id">Product Type Id</param>
+            <returns>Information</returns>
+        </member>
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductTypeController.GenerateLink(System.Int32)">
+            <summary>
+            Generate Link for this Controller Methodes
+            </summary>
+            <param name="Id">Product Type Id</param>
+            <returns>List Links</returns>
         </member>
         <member name="M:Api.EndPoint.Controllers.V1.UserController.Get">
             <summary>

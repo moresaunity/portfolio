@@ -1,4 +1,5 @@
-﻿using Application.Interfaces.Contexts;
+﻿using Application.Exceptions;
+using Application.Interfaces.Contexts;
 using Application.Services.Products.ProductItem.Commands.Edit;
 using AutoMapper;
 using Domain.Dtos;
@@ -20,10 +21,7 @@ namespace Aplication.Services.Products.ProductItem.Commands.Edit
 		public Task<BaseDto<EditProductItemResultDto>> Handle(EditProductItemCommand request, CancellationToken cancellationToken)
 		{
 			var product = context.Products.FirstOrDefault(p => p.Id == request.Id);
-			if (product == null)
-				product = context.Products.Local.FirstOrDefault(p => p.Id == request.Id);
-			if (product == null)
-				return Task.FromResult(new BaseDto<EditProductItemResultDto>(false, new List<string> { "product is not found" }, null));
+			if (product == null) product = context.Products.Local.FirstOrDefault(p => p.Id == request.Id);
 
 			product = mapper.Map(request.ProductDto, product);
 			product.Id = request.Id;

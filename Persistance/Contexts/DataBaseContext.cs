@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces.Contexts;
 using Domain.Attributes;
+using Domain.ChatRoom;
 using Domain.Discounts;
 using Domain.Products;
 using Domain.Products.Order;
@@ -27,6 +28,8 @@ namespace Persistance.Contexts
         public DbSet<Discount> Discounts { get; set; }
         public DbSet<DiscountUsageHistory> DiscountUsageHistorys { get; set; }
         public DbSet<ProductItemFavourite> ProductItemFavourites { get; set; }
+        public DbSet<ChatRoom> ChatRooms { get; set; }
+        public DbSet<ChatMessage> ChatMessages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

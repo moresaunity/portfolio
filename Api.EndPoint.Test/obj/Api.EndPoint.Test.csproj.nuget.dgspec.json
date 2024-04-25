@@ -180,9 +180,21 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.8, )"
+            },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
             },
             "WebEssentials.AspNetCore.PWA": {
               "target": "Package",
@@ -485,6 +497,10 @@
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
             }
           },
           "imports": [

@@ -158,7 +158,7 @@ namespace Api.EndPoint.Controllers.V1.Product
 		/// Generate Link for this Controller Methodes
 		/// </summary>
 		/// <param name="Id">Brand Id</param>
-		/// <returns>List Links</returns>
+		/// <returns>List Links</returns>	
 		private List<Links> GenerateLink(int Id)
 		{
 			return new List<Links>

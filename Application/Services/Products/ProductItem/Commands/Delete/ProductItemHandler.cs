@@ -1,4 +1,5 @@
-﻿using Application.Interfaces.Contexts;
+﻿using Application.Exceptions;
+using Application.Interfaces.Contexts;
 using AutoMapper;
 using Domain.Dtos;
 using Domain.Products;
@@ -18,7 +19,7 @@ namespace Aplication.Services.Products.ProductItem.Commands.Delete
         {
             var product = context.Products.FirstOrDefault(p => p.Id == request.Id);        
             if (product == null) product = context.Products.Local.FirstOrDefault(p => p.Id == request.Id);
-			if (product == null) return Task.FromResult(new BaseDto(false, new List<string> { "product is not found" }));
+            if (product == null) return Task.FromException<BaseDto>(new NotFoundException(nameof(product), request.Id));
 
             context.Products.Remove(product);
             if(context.Products.Count() != 0) context.SaveChanges();

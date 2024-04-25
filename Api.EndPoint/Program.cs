@@ -14,6 +14,8 @@ using Infrastructure.MappingProfile;
 using Aplication.Services.Products.ProductItem.Commands.Create;
 using Application.Services.Products.Favourites.Queries;
 using Application.Services.UriComposer;
+using Api.EndPoint.Midlewars;
+using NLog.Web;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -88,6 +90,8 @@ builder.Services.AddTransient<IUriComposerService, UriComposerService>();
 builder.Services.AddAutoMapper(typeof(UserEndPointMappingProfile).Assembly);
 builder.Services.AddAutoMapper(typeof(ProductEndPointMappingProfile).Assembly);
 builder.Services.AddAutoMapper(typeof(ProductMappingProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(ChatRoomMappingProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(ChatMessageMappingProfile).Assembly);
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -143,6 +147,12 @@ builder.Services.AddMemoryCache();
 
 builder.Services.AddProgressiveWebApp();
 
+builder.Host.ConfigureLogging(logger => 
+{
+    logger.ClearProviders();
+});
+builder.Host.UseNLog();
+
 WebApplication app = builder.Build();
 
 // app.UseOutputCache();
@@ -156,6 +166,8 @@ if (app.Environment.IsDevelopment())
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
     });
 }
+
+app.UseCustomExceptionHandler();
 
 app.UseHttpsRedirection();
 

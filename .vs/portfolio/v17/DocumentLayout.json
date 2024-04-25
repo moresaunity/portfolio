@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\moresabj\\source\\repos\\portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B01E1CE8-9115-4772-8A37-328C25C554DF}|Application.Test\\Application.Test.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\application.test\\productbrandtest\\addnewtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B01E1CE8-9115-4772-8A37-328C25C554DF}|Application.Test\\Application.Test.csproj|solutionrelative:application.test\\productbrandtest\\addnewtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\wwwroot\\js\\signalrservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\wwwroot\\js\\signalrservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E655704-35A5-40EA-92D0-DA94640C9705}|Api.EndPoint.Test\\Api.EndPoint.Test.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint.test\\productbrandcontrollertest\\gettest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E655704-35A5-40EA-92D0-DA94640C9705}|Api.EndPoint.Test\\Api.EndPoint.Test.csproj|solutionrelative:api.endpoint.test\\productbrandcontrollertest\\gettest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B01E1CE8-9115-4772-8A37-328C25C554DF}|Application.Test\\Application.Test.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\application.test\\productbrandtest\\getlisttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B01E1CE8-9115-4772-8A37-328C25C554DF}|Application.Test\\Application.Test.csproj|solutionrelative:application.test\\productbrandtest\\getlisttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\hubs\\sitechathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\hubs\\sitechathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B01E1CE8-9115-4772-8A37-328C25C554DF}|Application.Test\\Application.Test.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\application.test\\productbrandtest\\edittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B01E1CE8-9115-4772-8A37-328C25C554DF}|Application.Test\\Application.Test.csproj|solutionrelative:application.test\\productbrandtest\\edittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\wwwroot\\css\\chatbox.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\wwwroot\\css\\chatbox.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E655704-35A5-40EA-92D0-DA94640C9705}|Api.EndPoint.Test\\Api.EndPoint.Test.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint.test\\productbrandcontrollertest\\edittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E655704-35A5-40EA-92D0-DA94640C9705}|Api.EndPoint.Test\\Api.EndPoint.Test.csproj|solutionrelative:api.endpoint.test\\productbrandcontrollertest\\edittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddNewTest.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application.Test\\ProductBrandTest\\AddNewTest.cs",
-              "RelativeDocumentMoniker": "Application.Test\\ProductBrandTest\\AddNewTest.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application.Test\\ProductBrandTest\\AddNewTest.cs",
-              "RelativeToolTip": "Application.Test\\ProductBrandTest\\AddNewTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAgwBAAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T07:48:42.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EditTest.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application.Test\\ProductBrandTest\\EditTest.cs",
-              "RelativeDocumentMoniker": "Application.Test\\ProductBrandTest\\EditTest.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application.Test\\ProductBrandTest\\EditTest.cs",
-              "RelativeToolTip": "Application.Test\\ProductBrandTest\\EditTest.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAgwCQAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T07:48:42.751Z",
+              "Title": "ChatBox.css",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
+              "RelativeDocumentMoniker": "WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
+              "RelativeToolTip": "WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
+              "ViewState": "AQIAANkAAAAAAAAAAAAAAPYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-25T11:39:48.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GetListTest.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application.Test\\ProductBrandTest\\GetListTest.cs",
-              "RelativeDocumentMoniker": "Application.Test\\ProductBrandTest\\GetListTest.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Application.Test\\ProductBrandTest\\GetListTest.cs",
-              "RelativeToolTip": "Application.Test\\ProductBrandTest\\GetListTest.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAowBIAAAA5AAAA",
+              "Title": "SiteChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
+              "RelativeDocumentMoniker": "WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
+              "RelativeToolTip": "WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T07:48:42.767Z",
+              "WhenOpened": "2024-04-25T11:21:58.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EditTest.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint.Test\\ProductBrandControllerTest\\EditTest.cs",
-              "RelativeDocumentMoniker": "Api.EndPoint.Test\\ProductBrandControllerTest\\EditTest.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint.Test\\ProductBrandControllerTest\\EditTest.cs",
-              "RelativeToolTip": "Api.EndPoint.Test\\ProductBrandControllerTest\\EditTest.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T07:48:42.813Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAsAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T19:03:34.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SignalRService.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
+              "RelativeDocumentMoniker": "WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
+              "RelativeToolTip": "WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-24T19:02:58.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GetTest.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint.Test\\ProductBrandControllerTest\\GetTest.cs",
-              "RelativeDocumentMoniker": "Api.EndPoint.Test\\ProductBrandControllerTest\\GetTest.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint.Test\\ProductBrandControllerTest\\GetTest.cs",
-              "RelativeToolTip": "Api.EndPoint.Test\\ProductBrandControllerTest\\GetTest.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAgwB8AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T07:48:42.829Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebSite.EndPoint\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebSite.EndPoint\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAgwEEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T18:59:19.126Z",
               "EditorCaption": ""
             }
           ]
