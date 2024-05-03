@@ -1,118 +1,59 @@
-﻿/*#ChatBox {
+﻿section.chatbox {
     position: fixed;
-    z-index: 10;
-    bottom: 20px;
-    right: 20px;
-    background-color: white;
-    height: 400px;
-    width: 300px;
-    display: none;
+    z-index: 100;
 }
 
-    #ChatBox.show {
-        display: block;
-    }
-
-#MessagePanel {
-    padding-left: 15px;
-}
-
-#Messages {
-    list-style-type: none;
-    text-align: left;
-    padding-top: 15px;
-    margin-bottom: 15px;
-    height: 285px;
-    overflow-y: scroll;
-}
-
-    #Messages li {
-        padding-bottom: 15px;
-    }
-
-        #Messages li .name {
-            font-weight: bold;
-            margin-right: 5px;
-        }
-
-        #Messages li .time {
-            color: #999;
-        }
-
-        #Messages li .message {
-            padding-top: 5px;
-        }
-
-#SendNewMessage {
-    position: absolute;
-    width: 270px;
-}
-
-    #SendNewMessage #MessageInput {
-        width: 200px;
-    }*/
-
-
-
-
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", sans-serif;
-    background-color: #f6f7f9;
-}
-
-h1 {
+h1.chatbox {
     margin: 0;
     font-size: 16px;
     line-height: 1;
 }
 
-button {
+button.chatbox {
     color: inherit;
     background-color: transparent;
     border: 0;
     outline: 0 !important;
     cursor: pointer;
+    z-index: 1;
 }
 
-    button.chatbox-open {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: 52px;
-        height: 52px;
-        color: #fff;
-        background-color: #0360a5;
-        background-position: center center;
-        background-repeat: no-repeat;
-        box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
-        border: 0;
-        border-radius: 50%;
-        cursor: pointer;
-        margin: 16px;
-    }
+button.chatbox-open {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    color: #fff;
+    background-color: #0360a5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 16px;
+}
 
-    button.chatbox-close {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: 52px;
-        height: 52px;
-        color: #fff;
-        background-color: #0360a5;
-        background-position: center center;
-        background-repeat: no-repeat;
-        box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
-        border: 0;
-        border-radius: 50%;
-        cursor: pointer;
-        display: none;
-        margin: 16px calc(2 * 16px + 52px) 16px 16px;
-    }
+button.chatbox-close {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    color: #fff;
+    background-color: #0360a5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    margin: 16px calc(2 * 16px + 52px) 16px 16px;
+}
 
-textarea {
+textarea.chatbox {
     box-sizing: border-box;
     width: 100%;
     margin: 0;
@@ -129,17 +70,17 @@ textarea {
     overflow: hidden;
 }
 
-    textarea::-moz-placeholder {
-        color: #888;
-    }
+textarea::-moz-placeholder {
+    color: #888;
+}
 
-    textarea:-ms-input-placeholder {
-        color: #888;
-    }
+textarea:-ms-input-placeholder {
+    color: #888;
+}
 
-    textarea::placeholder {
-        color: #888;
-    }
+textarea::placeholder {
+    color: #888;
+}
 
 .chatbox-popup {
     display: flex;
@@ -242,6 +183,22 @@ textarea {
         flex: 0 0 auto;
     }
 
-li {
-    margin-bottom: 10px; /* یک فاصله 10 پیکسلی بین عناصر li */
+li.chatbox {
+    margin-bottom: 25px; /* یک فاصله 10 پیکسلی بین عناصر li */
+}
+
+    li.chatbox#user {
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    li.chatbox#admin {
+        text-align: left;
+    }
+
+ul.Messages.chatbox {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
 }

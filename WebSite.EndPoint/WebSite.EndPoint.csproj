@@ -8,12 +8,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\Template\.idea\inspectionProfiles\Project_Default.xml" />
+    <Content Include="wwwroot\Template\.idea\modules.xml" />
+    <Content Include="wwwroot\Template\.idea\workspace.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.4" />
     <PackageReference Include="RestSharp" Version="110.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Template\.idea\.gitignore" />
+    <None Include="wwwroot\Template\.idea\Getyootech.iml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Template\assets\css\assets\" />
   </ItemGroup>
 
 </Project>

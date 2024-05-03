@@ -9,7 +9,7 @@ namespace WebSite.EndPoint.Hubs
     {
         public async Task SendNewMessage(string Sender, string Message)
         {
-            var client = new RestClient("https://localhost:7239");
+            var client = new RestClient("http://localhost:5168");
             var getRoomIdRequest = new RestRequest("/api/v1/ChatRoom/" + Context.ConnectionId, Method.Get);
             getRoomIdRequest.AddParameter("ConnectionId", Context.ConnectionId);
             BaseDto<Guid>? getRoomIdResult = client.Get<BaseDto<Guid>>(getRoomIdRequest);
@@ -24,7 +24,7 @@ namespace WebSite.EndPoint.Hubs
 
         public async Task LeaveRoom(Guid roomId)
         {
-            var client = new RestClient("https://localhost:7239");
+            var client = new RestClient("http://localhost:5168");
             var LeaveRoomRequest = new RestRequest("/api/v1/ChatRoom", Method.Delete);
             LeaveRoomRequest.AddHeader("ConnectionId", Context.ConnectionId);
             LeaveRoomRequest.AddHeader("RoomId", roomId);
@@ -34,7 +34,7 @@ namespace WebSite.EndPoint.Hubs
         }
         public async Task JoinRoom(Guid roomId)
         {
-            var client = new RestClient("https://localhost:7239");
+            var client = new RestClient("http://localhost:5168");
             var JoinRoomRequest = new RestRequest("/api/v1/ChatRoom", Method.Put);
             JoinRoomRequest.AddHeader("ConnectionId", Context.ConnectionId);
             JoinRoomRequest.AddHeader("RoomId", roomId);
@@ -44,7 +44,7 @@ namespace WebSite.EndPoint.Hubs
         }
         public async Task ShowChatBox(string roomId)
         {
-            var client = new RestClient("https://localhost:7239");
+            var client = new RestClient("http://localhost:5168");
             if (roomId == null)
             {
                 var getRoomIdRequest = new RestRequest("/api/v1/ChatRoom", Method.Post);

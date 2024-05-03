@@ -46,8 +46,12 @@ connection.on('getNewMessage', getMessage);
 connection.on('ReceiveRoomId', setSession);
 
 function getMessage(sender, message, time) {
-
-    $(".Messages").append("<li><div><span class='name'>" + sender + "</span><span class='time'>" + time + "</span></div><div class='message'>" + message + "</div></li>")
+    if (sender == "پشتیبانی سایت") {
+        $(".Messages").append("<li id='admin' class='chatbox'><div class='chatbox'><span class='name'>" + sender + "</span><span class='time'>" + time + "</span></div><div class='message'>" + message + "</div></li>")
+    }
+    else {
+        $(".Messages").append("<li id='user' class='chatbox'><div class='chatbox'><span class='name'>" + sender + "</span><span class='time'>" + time + "</span></div><div class='message'>" + message + "</div></li>")
+    }
 };
 
 function setSession(roomId) {
@@ -55,7 +59,7 @@ function setSession(roomId) {
 }
 
 $(document).ready(function () {
-        Init();
+    Init();
     $(".chatbox-open").on("click", function () {
         $(".chatbox-popup, .chatbox-close").fadeIn();
     });
@@ -66,12 +70,14 @@ $(document).ready(function () {
 
     $(".chatbox-maximize").on("click", function () {
         $(".chatbox-popup, .chatbox-open, .chatbox-close").fadeOut();
+        $(".Messages").css("height", "700px");
         $(".chatbox-panel").fadeIn();
         $(".chatbox-panel").css({ display: "flex" });
     });
 
     $(".chatbox-minimize").on("click", function () {
         $(".chatbox-panel").fadeOut();
+        $(".Messages").css("height", "200px");
         $(".chatbox-popup, .chatbox-open, .chatbox-close").fadeIn();
     });
     $(".chatbox-panel-close").on("click", function () {

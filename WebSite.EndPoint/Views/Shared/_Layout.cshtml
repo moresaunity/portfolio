@@ -1,51 +1,564 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebSite.EndPoint</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>صفحه اصلی V.1 - گت یو تیچ - قالب سایت تجارت الکترونیک گجت</title>
+    <link rel="shortcut icon" href="~/Template/assets/images/logo/favourite_icon.svg">
+
+    <!-- fraimwork - css include -->
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/bootstrap.min.css">
+
+    <!-- icon font - css include -->
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/stroke-gap-icons.css">
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/icofont.css">
+
+    <!-- animation - css include -->
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/animate.css">
+
+    <!-- carousel - css include -->
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/slick-theme.css">
+
+    <!-- popup - css include -->
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/magnific-popup.css">
+
+    <!-- jquery-ui - css include -->
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/jquery-ui.css">
+
+    <!-- select option - css include -->
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/nice-select.css">
+
+    <!-- custom - css include -->
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="~/Template/assets/fonts/vazir-font-for-index.css">
+
     <link href="~/css/chatbox.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/WebSite.EndPoint.styles.css" asp-append-version="true" />
+
 </head>
+
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebSite.EndPoint</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+
+    <!-- body_wrap - start -->
+    <div class="body_wrap">
+
+        <!-- backtotop - start -->
+        <div class="backtotop">
+            <a href="#" class="scroll">
+                <i class="far fa-arrow-up"></i>
+            </a>
+        </div>
+        <!-- backtotop - end -->
+        <!-- preloader - start -->
+        <div id="preloader"></div>
+        <!-- preloader - end -->
+        <!-- header_section - start
+        ================================================== -->
+        <header class="header_section">
+            <div class="header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col col-md-6">
+                            <ul class="header_select_options ul_li">
+                                <li>
+                                    <div class="select_option">
+                                        <div class="flug_wrap">
+                                            <img src="~/Template/assets/images/flug/flug_uk.png" alt="Getyootech - Gadgets Ecommerce Site Template">
+                                        </div>
+                                        <select>
+                                            <option data-display="Select Option">زبان خود را انتخاب کنید</option>
+                                            <option value="1" selected>انگلیسی</option>
+                                            <option value="2">بنگلا</option>
+                                            <option value="3" disabled>عربی</option>
+                                            <option value="4">عبری</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select_option">
+                                        <h3 class="title_text">واحدپول:</h3>
+                                        <select>
+                                            <option data-display="Select Option">ارز خود را انتخاب کنید</option>
+                                            <option value="united States Dollar" selected>دلار</option>
+                                            <option value="Armenian Dram">ارمنی</option>
+                                            <option value="Australian Dollar" disabled>استرالیا</option>
+                                            <option value="Austria">یورو</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col col-md-6">
+                            <p class="header_hotline">خط تلفن: <strong>3322 111 0911</strong></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
 
-    @RenderBody()
+            <div class="header_middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col col-lg-3 col-5">
+                            <div class="brand_logo">
+                                <a class="brand_link" href="index.html">
+                                    <img src="~/Template/assets/images/logo/site_logo.svg" alt="Getyootech - Gadgets Ecommerce Site Template">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-lg-6 col-2">
+                            <nav class="main_menu navbar navbar-expand-lg">
+                                <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
+                                    <ul class="main_menu_list ul_li">
+                                        <li class="dropdown active">
+                                            <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">صفحه اصلی</a>
+                                            <ul class="dropdown-menu" aria-labelledby="home_submenu">
+                                                <li><a href="index_1.html">صفحه اصلی V.1</a></li>
+                                                <li class="active"><a href="index_2.html">صفحه اصلی V.2</a></li>
+                                                <li><a href="index_3.html">صفحه اصلی V.3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="nav-link" href="#" id="shop_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">خرید کنید</a>
+                                            <ul class="dropdown-menu" aria-labelledby="shop_submenu">
+                                                <li><a href="shop_grid.html">فروشگاه گرید</a></li>
+                                                <li><a href="shop_list.html">لیست فروشگاه</a></li>
+                                                <li><a href="shop_details.html">جزئیات فروشگاه</a></li>
+                                                <li class="dropdown">
+                                                    <a class="nav-link" href="#" id="shop_info_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        اطلاعات خرید
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="shop_info_submenu">
+                                                        <li><a href="cart.html">سبد خرید</a></li>
+                                                        <li><a href="cart_empty.html">سبد خالی</a></li>
+                                                        <li><a href="checkout.html">وارسی</a></li>
+                                                        <li><a href="compare.html">مقایسه کنید</a></li>
+                                                        <li><a href="wishlist.html">لیست علاقه مندیها</a></li>
+                                                        <li><a href="order_tracking.html">رهگیری سفارش</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="nav-link" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                وبلاگ
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="blog_submenu">
+                                                <li><a href="blog.html">استاندارد وبلاگ</a></li>
+                                                <li><a href="blog_grid.html">وبلاگ 2 ستون</a></li>
+                                                <li><a href="blog_masonry.html">ماسونری وبلاگ</a></li>
+                                                <li><a href="blog_list.html">چیدمان فهرست وبلاگ</a></li>
+                                                <li><a href="blog_details.html">جزئیات وبلاگ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown ">
+                                            <a class="nav-link" href="#" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                صفحات
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="pages_submenu">
+                                                <li><a href="about.html">درباره ما</a></li>
+                                                <li><a href="team.html">تیم</a></li>
+                                                <li><a href="account.html">حساب من</a></li>
+                                                <li><a href="register.html">ثبت نام</a></li>
+                                                <li><a href="error.html">404 خطا</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">تماس با ما </a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - WebSite.EndPoint - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "15e84193-4cd1-4612-8a06-883354bc76b0"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+                        <div class="col col-lg-3 col-5">
+                            <ul class="header_icons_group ul_li_right">
+                                <li>
+                                    <button class="mobile_menu_btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fal fa-bars"></i>
+                                    </button>
+                                </li>
+                                <li><a href="contact.html"><i class="fa-regular fa-location-dot"></i></a></li>
+                                <li><a href="compare.html"><i class="fa-solid fa-arrows-rotate"></i></a></li>
+                                <li>
+                                    <a href="wishlist.html">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <small class="wishlist_counter">5</small>
+                                    </a>
+                                </li>
+                                <li><a href="account.html"><i class="fa-regular fa-user"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col col-md-3 col-6">
+                            <div class="allcategories_dropdown">
+                                <button class="allcategories_btn" type="button" data-bs-toggle="collapse" data-bs-target="#allcategories_collapse" aria-expanded="false" aria-controls="allcategories_collapse">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13" viewBox="0 0 15 13">
+                                        <image width="15" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANAgMAAAALcNzSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEX+//3+//0AAABvRd2oAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQflBwIBIhVZ2fz2AAAAGUlEQVQI12MIDQ0NYQATaAAshEUcJgvVBgDy4QdJZv6kzwAAAABJRU5ErkJggg==" />
+                                    </svg>
+                                    همه دسته بندی ها
+                                </button>
+                                <div class="allcategories_collapse collapse" id="allcategories_collapse">
+                                    <div class="card card-body">
+                                        <ul class="allcategories_list ul_li_block">
+                                            <li><a href="shop_grid.html"><i class="far fa-rocket-launch"></i> محصولات جدید</a></li>
+                                            <li><a href="shop_list.html"><i class="fa fa-earth-americas"></i>بیشترین  محصولات محبوب</a></li>
+                                            <li><a href="shop_grid.html"><i class="far fa-star-christmas"></i> معاملات روز</a></li>
+                                            <li><a href="shop_list.html"><i class="fa fa-mobile-screen"></i> لوازم جانبی موبایل</a></li>
+                                            <li><a href="shop_grid.html"><i class="far fa-computer-classic"></i> لوازم جانبی رایانه</a></li>
+                                            <li><a href="shop_list.html"><i class=" fa fa-align-justify "></i> لوازم الکترونیکی مصرفی</a></li>
+                                            <li><a href="shop_grid.html"><i class="fa fa-car"></i> اتومبیل &amp; موتور سیکلت</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-md-6">
+                            <form action="#">
+                                <div class="advance_serach">
+                                    <div class="form_item">
+                                        <input type="search" name="search" placeholder="جستجوی محصولات">
+                                    </div>
+                                    <button type="submit" class="search_btn"><i class="far fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col col-md-3 col-6">
+                            <button type="button" class="cart_btn">
+                                <span class="cart_icon">
+                                    <i class="icon icon-ShoppingCart"></i>
+                                    <small class="cart_counter">3</small>
+                                </span>
+                                <span class="cart_amount">90.00 تومان  </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header_section - end
+        ================================================== -->
+        <!-- main body - start
+        ================================================== -->
+        <main>
+
+            <!-- sidebar cart - start
+            ================================================== -->
+            <div class="sidebar-menu-wrapper">
+                <div class="cart_sidebar">
+                    <button type="button" class="close_btn"><i class="fal fa-times"></i></button>
+
+                    <ul class="cart_items_list ul_li_block mb_30 clearfix" style="direction: rtl">
+                        <li>
+                            <div class="item_image">
+                                <img src="~/Template/assets/images/cart/cart_img_1.webp" alt="Getyootech - Gadgets Ecommerce Site Template">
+                            </div>
+                            <div class="item_content">
+                                <h4 class="item_title">بلوز زرد</h4>
+                                <span class="item_price">30.00  تومان</span>
+                            </div>
+                            <button type="button" class="remove_btn"><i class="fal fa-trash-alt"></i></button>
+                        </li>
+                        <li>
+                            <div class="item_image">
+                                <img src="~/Template/assets/images/cart/cart_img_2.webp" alt="Getyootech - Gadgets Ecommerce Site Template">
+                            </div>
+                            <div class="item_content">
+                                <h4 class="item_title">بلوز زرد</h4>
+                                <span class="item_price">30.00  تومان</span>
+                            </div>
+                            <button type="button" class="remove_btn"><i class="fal fa-trash-alt"></i></button>
+                        </li>
+                        <li>
+                            <div class="item_image">
+                                <img src="~/Template/assets/images/cart/cart_img_3.webp" alt="Getyootech - Gadgets Ecommerce Site Template">
+                            </div>
+                            <div class="item_content">
+                                <h4 class="item_title">بلوز زرد</h4>
+                                <span class="item_price">30.00  تومان</span>
+                            </div>
+                            <button type="button" class="remove_btn"><i class="fal fa-trash-alt"></i></button>
+                        </li>
+                    </ul>
+
+                    <ul class="total_price ul_li_block mb_30 clearfix">
+                        <li>
+                            <span>جمع فرعی:</span>
+
+                            <span>90 تومان</span>
+                        </li>
+                        <li>
+                            <span>مالیات بر ارزش افزوده 5 درصد:</span>
+                            <span>4.5  تومان</span>
+                        </li>
+                        <li>
+                            <span>تخفیف 20%:</span>
+                            <span>18.9  تومان</span>
+                        </li>
+                        <li>
+                            <span>جمع:</span>
+                            <span>75.6  تومان</span>
+                        </li>
+                    </ul>
+
+                    <ul class="btns_group ul_li_block clearfix">
+                        <li><a class="btn btn_primary" href="cart.html">مشاهده سبد خرید </a></li>
+                        <li><a class="btn btn_secondary" href="checkout.html">تسویه حساب </a></li>
+                    </ul>
+                </div>
+
+                <div class="cart_overlay"></div>
+            </div>
+            <!-- sidebar cart - end
+            ================================================== -->
+            <!-- product مشاهده سریع modal - start
+            ================================================== -->
+            @RenderBody()
+            <!-- newsletter_section - start
+            ================================================== -->
+            <section class="newsletter_section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col col-lg-6">
+                            <h2 class="newsletter_title text-white">
+                                <i class="icofont-paper-plane"></i>
+                                برای خبرنامه ثبت نام کنید
+                            </h2>
+                        </div>
+                        <div class="col col-lg-6">
+                            <form action="#!">
+                                <div class="newsletter_form">
+                                    <input type="email" name="email" placeholder="آدرس ایمیل خود را وارد کنید">
+                                    <button type="submit" class="btn btn_danger">ارسال</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- newsletter_section - end
+            ================================================== -->
+
+        </main>
+        <!-- main body - end
+        ================================================== -->
+        <!-- footer_section - start
+        ================================================== -->
+        <footer class="footer_section">
+            <div class="footer_widget_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer_widget footer_about">
+                                <div class="brand_logo">
+                                    <a class="brand_link" href="index.html">
+                                        <img src="~/Template/assets/images/logo/site_logo.svg" alt="Getyootech - Gadgets Ecommerce Site Template">
+                                    </a>
+                                </div>
+                                <p>
+                                    برای مشتری بسیار مهم است که خدمات مشتری را دنبال کند، اما این همان چیزی است که در همان زمان اتفاق می افتد.
+                                </p>
+                                <ul class="social_round ul_li">
+                                    <li><a href="#!"><i class="icofont-youtube-play"></i></a></li>
+                                    <li><a href="#!"><i class="icofont-instagram"></i></a></li>
+                                    <li><a href="#!"><i class="icofont-twitter"></i></a></li>
+                                    <li><a href="#!"><i class="icofont-facebook"></i></a></li>
+                                    <li><a href="#!"><i class="icofont-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col col-lg-2 col-md-3 col-sm-6">
+                            <div class="footer_widget footer_useful_links">
+                                <h3 class="footer_widget_title text-uppercase">لینک های سریع</h3>
+                                <ul class="ul_li_block">
+                                    <li><a href="about.html">درباره ما</a></li>
+                                    <li><a href="contact.html">تماس با ما </a></li>
+                                    <li><a href="shop.html">محصولات</a></li>
+                                    <li><a href="register.html">وارد شدن</a></li>
+                                    <li><a href="register.html">ثبت نام</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col col-lg-2 col-md-3 col-sm-6">
+                            <div class="footer_widget footer_useful_links">
+                                <h3 class="footer_widget_title text-uppercase">منطقه سفارشی</h3>
+                                <ul class="ul_li_block">
+                                    <li><a href="account.html">حساب من</a></li>
+                                    <li><a href="wishlist.html">لیست علاقه مندیها</a></li>
+                                    <li><a href="order_tracking.html">لیست پیگیری</a></li>
+                                    <li><a href="cart.html">سبد خرید من</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer_widget footer_contact">
+                                <h3 class="footer_widget_title text-uppercase">اطلاعات تماس</h3>
+                                <p>
+                                    برای مشتری بسیار مهم است که خدمات مشتری را دنبال کند، اما این همان چیزی است که در همان زمان اتفاق می افتد.
+                                </p>
+                                <div class="hotline_wrap">
+                                    <div class="footer_hotline">
+                                        <div class="item_icon">
+                                            <i class="icofont-headphone-alt"></i>
+                                        </div>
+                                        <div class="item_content">
+                                            <h4 class="item_title">سوالی دارید؟</h4>
+                                            <span class="hotline_number">3322 111 0911</span>
+                                        </div>
+                                    </div>
+                                    <div class="livechat_btn clearfix">
+                                        <a class="btn border_primary" href="#!">چت زنده</a>
+                                    </div>
+                                </div>
+                                <ul class="store_btns_group ul_li">
+                                    <li><a href="#!"><img src="~/Template/assets/images/app_store.webp" alt="app_store"></a></li>
+                                    <li><a href="#!"><img src="~/Template/assets/images/play_store.webp" alt="play_store"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col col-md-6">
+                            <p class="copyright_text">
+                                <a href="https://themeforest.net/user/web-thunder">وب تاندر</a>  قالب © <b>گت یو تیچ</b>     . کلیه حقوق محفوظ است حق چاپ  2023
+                            </p>
+                        </div>
+
+                        <div class="col col-md-6">
+                            <div class="payment_method">
+                                <h4>پرداخت:</h4>
+                                <img src="~/Template/assets/images/payments_icon.webp" alt="Getyootech - Gadgets Ecommerce Site Template">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer_section - end
+        ================================================== -->
+
+    </div>
+
+    <button class="chatbox-open chatbox">
+        <i class="fa fa-comment fa-2x chatbox" aria-hidden="true"></i>
+    </button>
+    <button class="chatbox-close chatbox">
+        <i class="fa fa-close fa-2x chatbox" aria-hidden="true"></i>
+    </button>
+    <section class="chatbox-popup chatbox">
+        <header class="chatbox-popup__header chatbox">
+            <aside style="flex:3">
+                <i class="fa fa-user-circle fa-4x chatbox-popup__avatar chatbox" aria-hidden="true"></i>
+            </aside>
+            <aside style="flex:8">
+                <h1 class="chatbox">Sussanah Austin</h1> Agent (Online)
+            </aside>
+            <aside style="flex:1">
+                <button class="chatbox-maximize chatbox"><i class="fa fa-window-maximize chatbox" aria-hidden="true"></i></button>
+            </aside>
+        </header>
+        <main class="chatbox-popup__main chatbox">
+            <ul class="Messages chatbox"></ul>
+        </main>
+        <form id="NewMessageForm" class="chatbox-popup__footer chatbox">
+            <aside style="flex:1;color:#888;text-align:center;">
+                <i class="fa fa-camera chatbox" aria-hidden="true"></i>
+            </aside>
+            <aside style="flex:10">
+                <textarea type="text" placeholder="Type your message here..." class="chatbox"></textarea>
+            </aside>
+            <aside style="flex:1;color:#888;text-align:center;">
+                <button type="submit" class="chatbox">
+                    <i class="fa fa-paper-plane chatbox" aria-hidden="true"></i>
+                </button>
+            </aside>
+        </form>
+    </section>
+    <section class="chatbox-panel chatbox">
+        <header class="chatbox-panel__header">
+            <aside style="flex:3">
+                <i class="fa fa-user-circle fa-3x chatbox-popup__avatar" aria-hidden="true"></i>
+            </aside>
+            <aside style="flex:6">
+                <h1 class="chatbox">Sussanah Austin</h1> Agent (Online)
+            </aside>
+            <aside style="flex:3;text-align:right;">
+                <button class="chatbox-minimize chatbox"><i class="fa fa-window-restore" aria-hidden="true"></i></button>
+                <button class="chatbox-panel-close chatbox"><i class="fa fa-close" aria-hidden="true"></i></button>
+            </aside>
+        </header>
+        <main class="chatbox-panel__main" style="flex:1">
+            <ul class="Messages chatbox"></ul>
+        </main>
+        <footer class="chatbox-panel__footer">
+            <aside style="flex:1;color:#888;text-align:center;">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+            </aside>
+            <aside style="flex:10">
+                <textarea class="chatbox" type="text" placeholder="Type your message here..."></textarea>
+            </aside>
+            <aside style="flex:1;color:#888;text-align:center;">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </aside>
+        </footer>
+    </section>
+
+
+    <!-- body_wrap - end -->
+    <!-- fraimwork - jquery include -->
+    <script src="~/Template/assets/js/jquery.min.js"></script>
+    <script src="~/Template/assets/js/popper.min.js"></script>
+    <script src="~/Template/assets/js/bootstrap.min.js"></script>
+    <script src="~/Template/assets/js/bootstrap5-dropdown-ml-hack.js"></script>
+
+    <!-- carousel - jquery include -->
+    <script src="~/Template/assets/js/slick.min.js"></script>
+
+    <!-- popup - jquery include -->
+    <script src="~/Template/assets/js/magnific-popup.min.js"></script>
+
+    <!-- jquery-ui - jquery include -->
+    <script src="~/Template/assets/js/jquery-ui.js"></script>
+
+    <!-- off canvas sidebar - jquery include -->
+    <script src="~/Template/assets/js/mCustomScrollbar.js"></script>
+
+    <!-- select option - jquery include -->
+    <script src="~/Template/assets/js/nice-select.min.js"></script>
+
+    <!-- countdown timer - jquery include -->
+    <script src="~/Template/assets/js/countdown.js"></script>
+
+    <!-- counter up - jquery include -->
+    <script src="~/Template/assets/js/counterup.min.js"></script>
+    <script src="~/Template/assets/js/waypoints.min.js"></script>
+
+    <!-- custom - jquery include -->
+    <script src="~/Template/assets/js/main.js"></script>
+
     <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/signalrservice.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>
