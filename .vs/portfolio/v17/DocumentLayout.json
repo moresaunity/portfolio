@@ -3,27 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\moresabj\\source\\repos\\portfolio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\shared\\components\\chatboxcomponent\\chatboxcomponent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\shared\\components\\chatboxcomponent\\chatboxcomponent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\models\\viewcomponents\\chatboxcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\models\\viewcomponents\\chatboxcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\wwwroot\\js\\signalrservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\wwwroot\\js\\signalrservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\wwwroot\\css\\chatbox.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\wwwroot\\css\\chatbox.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\wwwroot\\css\\chatbox.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\hubs\\sitechathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\hubs\\sitechathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\hubs\\sitechathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\chat\\chatroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\chat\\chatroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\controllers\\v1\\chat\\chatroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +50,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "ChatBoxComponent.cshtml",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Shared\\Components\\ChatBoxComponent\\ChatBoxComponent.cshtml",
+              "RelativeDocumentMoniker": "WebSite.EndPoint\\Views\\Shared\\Components\\ChatBoxComponent\\ChatBoxComponent.cshtml",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Shared\\Components\\ChatBoxComponent\\ChatBoxComponent.cshtml",
+              "RelativeToolTip": "WebSite.EndPoint\\Views\\Shared\\Components\\ChatBoxComponent\\ChatBoxComponent.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T20:54:44.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatBoxComponent.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Models\\ViewComponents\\ChatBoxComponent.cs",
+              "RelativeDocumentMoniker": "WebSite.EndPoint\\Models\\ViewComponents\\ChatBoxComponent.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Models\\ViewComponents\\ChatBoxComponent.cs",
+              "RelativeToolTip": "WebSite.EndPoint\\Models\\ViewComponents\\ChatBoxComponent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T20:52:58.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ChatRoomController.cs",
               "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Chat\\ChatRoomController.cs",
               "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\Chat\\ChatRoomController.cs",
@@ -50,12 +84,11 @@
               "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\Chat\\ChatRoomController.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAgwC4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T16:01:15.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:01:15.797Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SiteChatHub.cs",
               "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
               "RelativeDocumentMoniker": "WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
@@ -63,25 +96,24 @@
               "RelativeToolTip": "WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
               "ViewState": "AQIAABgAAAAAAAAAAIAywC0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T15:59:55.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T15:59:55.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "SignalRService.js",
               "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
               "RelativeDocumentMoniker": "WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
               "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
               "RelativeToolTip": "WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAAE8AAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-05-03T15:45:37.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ChatBox.css",
               "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
               "RelativeDocumentMoniker": "WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
@@ -89,12 +121,11 @@
               "RelativeToolTip": "WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
               "ViewState": "AQIAAK8AAAAAAAAAAAAAAMcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-03T15:42:27.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T15:42:27.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "WebSite.EndPoint\\Views\\Home\\Index.cshtml",
@@ -102,18 +133,17 @@
               "RelativeToolTip": "WebSite.EndPoint\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAH4FAAAAAAAAAAAAAL0FAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-03T15:40:44.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T15:40:44.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAOYBAAAAAAAAAAAAAP0BAAAmAAAA",
+              "ViewState": "AQIAAK0BAAAAAAAAAAAAAMwBAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-03T15:35:51.123Z",
               "EditorCaption": ""
