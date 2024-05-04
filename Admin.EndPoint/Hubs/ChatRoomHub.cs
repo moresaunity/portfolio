@@ -11,7 +11,7 @@ namespace Admin.EndPoint.Hubs
     {
         public override async Task OnConnectedAsync()
         {
-            var client = new RestClient("https://localhost:7239");
+            var client = new RestClient("http://localhost:5168");
             var getChatRoomRequest = new RestRequest("/api/v1/ChatRoom", Method.Get);
             BaseDto<List<GetChatRoomDto>>? getChatRoomResult = client.Get<BaseDto<List<GetChatRoomDto>>>(getChatRoomRequest);
             List<Guid> ChatRoomIds = new List<Guid>();
@@ -22,7 +22,7 @@ namespace Admin.EndPoint.Hubs
         }
         public async Task LoadMessage(Guid roomId)
         {
-            var client = new RestClient("https://localhost:7239");
+            var client = new RestClient("http://localhost:5168");
             var getChatMessageRequest = new RestRequest("/api/v1/ChatMessage/" + roomId, Method.Get);
             BaseDto<List<GetChatMessageDto>>? getChatMessageResult = client.Get<BaseDto<List<GetChatMessageDto>>>(getChatMessageRequest);
 
@@ -31,7 +31,7 @@ namespace Admin.EndPoint.Hubs
         }
         public async Task SendMessage(Guid roomId, string text)
         {
-            var client = new RestClient("https://localhost:7239");
+            var client = new RestClient("http://localhost:5168");
             var SaveChatMessageRequest = new RestRequest("/api/v1/ChatMessage/" + roomId, Method.Get);
             SaveChatMessageRequest.AddJsonBody(new ChatMessageDto(Context.User.Identity.Name, text));
             client.Post(SaveChatMessageRequest);
@@ -40,7 +40,7 @@ namespace Admin.EndPoint.Hubs
         }
         public async Task JoinRoom(Guid roomId)
         {
-            var client = new RestClient("https://localhost:7239");
+            var client = new RestClient("http://localhost:5168");
             var JoinRoomRequest = new RestRequest("/api/v1/ChatRoom", Method.Put);
             JoinRoomRequest.AddHeader("ConnectionId", Context.ConnectionId);
             JoinRoomRequest.AddHeader("RoomId", roomId);
@@ -50,7 +50,7 @@ namespace Admin.EndPoint.Hubs
         }
         public async Task LeaveRoom(Guid roomId)
         {
-            var client = new RestClient("https://localhost:7239");
+            var client = new RestClient("http://localhost:5168");
             var LeaveRoomRequest = new RestRequest("/api/v1/ChatRoom", Method.Delete);
             LeaveRoomRequest.AddHeader("ConnectionId", Context.ConnectionId);
             LeaveRoomRequest.AddHeader("RoomId", roomId);

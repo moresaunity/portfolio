@@ -27,7 +27,7 @@ namespace Admin.EndPoint.Controllers
         [HttpPost]
         public IActionResult Login(AccountDto accountDto)
         {
-            var client = new RestClient("https://localhost:7239");
+            var client = new RestClient("http://localhost:5168");
             var request = new RestRequest("/api/v1/Account", Method.Post);
             request.AddJsonBody(accountDto);
             AccountResultDto? result = client.Post<AccountResultDto>(request);

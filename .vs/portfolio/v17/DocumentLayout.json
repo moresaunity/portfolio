@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\moresabj\\source\\repos\\portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\shared\\components\\chatboxcomponent\\chatboxcomponent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\shared\\components\\chatboxcomponent\\chatboxcomponent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\account\\loginorregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\account\\loginorregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\models\\viewcomponents\\chatboxcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\models\\viewcomponents\\chatboxcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\controllers\\v1\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\wwwroot\\js\\signalrservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\wwwroot\\js\\signalrservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\models\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\models\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\wwwroot\\css\\chatbox.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\wwwroot\\css\\chatbox.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\models\\dtos\\account\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\models\\dtos\\account\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\hubs\\sitechathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\hubs\\sitechathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\chat\\chatroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\controllers\\v1\\chat\\chatroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30350C63-0677-466F-B6F6-C37D749AAB01}|Admin.EndPoint\\Admin.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\admin.endpoint\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30350C63-0677-466F-B6F6-C37D749AAB01}|Admin.EndPoint\\Admin.EndPoint.csproj|solutionrelative:admin.endpoint\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,102 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChatBoxComponent.cshtml",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Shared\\Components\\ChatBoxComponent\\ChatBoxComponent.cshtml",
-              "RelativeDocumentMoniker": "WebSite.EndPoint\\Views\\Shared\\Components\\ChatBoxComponent\\ChatBoxComponent.cshtml",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Shared\\Components\\ChatBoxComponent\\ChatBoxComponent.cshtml",
-              "RelativeToolTip": "WebSite.EndPoint\\Views\\Shared\\Components\\ChatBoxComponent\\ChatBoxComponent.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-03T20:54:44.119Z",
+              "DocumentIndex": 3,
+              "Title": "AccountDto.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\AccountDto.cs",
+              "RelativeDocumentMoniker": "Api.EndPoint\\Models\\Dtos\\AccountDto.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\AccountDto.cs",
+              "RelativeToolTip": "Api.EndPoint\\Models\\Dtos\\AccountDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T18:56:36.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ChatBoxComponent.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Models\\ViewComponents\\ChatBoxComponent.cs",
-              "RelativeDocumentMoniker": "WebSite.EndPoint\\Models\\ViewComponents\\ChatBoxComponent.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Models\\ViewComponents\\ChatBoxComponent.cs",
-              "RelativeToolTip": "WebSite.EndPoint\\Models\\ViewComponents\\ChatBoxComponent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\AccountController.cs",
+              "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\AccountController.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\AccountController.cs",
+              "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\AccountController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAowE0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T20:52:58.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ChatRoomController.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Chat\\ChatRoomController.cs",
-              "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\Chat\\ChatRoomController.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Chat\\ChatRoomController.cs",
-              "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\Chat\\ChatRoomController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwC4AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T16:01:15.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SiteChatHub.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
-              "RelativeDocumentMoniker": "WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
-              "RelativeToolTip": "WebSite.EndPoint\\Hubs\\SiteChatHub.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAIAywC0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T15:59:55.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SignalRService.js",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
-              "RelativeDocumentMoniker": "WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
-              "RelativeToolTip": "WebSite.EndPoint\\wwwroot\\js\\SignalRService.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-03T15:45:37.929Z",
+              "WhenOpened": "2024-05-04T18:36:59.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ChatBox.css",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
-              "RelativeDocumentMoniker": "WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
-              "RelativeToolTip": "WebSite.EndPoint\\wwwroot\\css\\ChatBox.css",
-              "ViewState": "AQIAAK8AAAAAAAAAAAAAAMcAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-03T15:42:27.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebSite.EndPoint\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebSite.EndPoint\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAH4FAAAAAAAAAAAAAL0FAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-03T15:40:44.912Z"
+              "Title": "AccountDto.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Models\\Dtos\\Account\\AccountDto.cs",
+              "RelativeDocumentMoniker": "WebSite.EndPoint\\Models\\Dtos\\Account\\AccountDto.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Models\\Dtos\\Account\\AccountDto.cs",
+              "RelativeToolTip": "WebSite.EndPoint\\Models\\Dtos\\Account\\AccountDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T18:25:05.603Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebSite.EndPoint\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAK0BAAAAAAAAAAAAAMwBAAA0AAAA",
+              "Title": "LoginOrRegister.cshtml",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Account\\LoginOrRegister.cshtml",
+              "RelativeDocumentMoniker": "WebSite.EndPoint\\Views\\Account\\LoginOrRegister.cshtml",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Account\\LoginOrRegister.cshtml",
+              "RelativeToolTip": "WebSite.EndPoint\\Views\\Account\\LoginOrRegister.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEYAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-03T15:35:51.123Z",
+              "WhenOpened": "2024-05-04T18:17:36.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Admin.EndPoint\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Admin.EndPoint\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Admin.EndPoint\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Admin.EndPoint\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T18:09:25.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebSite.EndPoint\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebSite.EndPoint\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAlwBgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T18:08:14.944Z",
               "EditorCaption": ""
             }
           ]

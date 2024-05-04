@@ -17,6 +17,6 @@ namespace Api.EndPoint.Models.Dtos
         [Display(Name = "به یاد داشتن")]
         public bool IsPersistent { get; set; } = false;
 
-        public string ReturnUrl { get; set; }
+        public string ReturnUrl { get; set; } = "/";
     }
 }
