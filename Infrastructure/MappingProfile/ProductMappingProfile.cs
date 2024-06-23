@@ -15,7 +15,10 @@ namespace Infrastructure.MappingProfile
         public ProductMappingProfile()
         {
             CreateMap<ProductItem, CreateProductItemDto>().ReverseMap();
-            CreateMap<ProductItem, GetProductItemDto>().ReverseMap();
+            CreateMap<ProductItem, GetProductItemDto>()
+                .ForMember(dest => dest.Images, opt =>
+                 opt.MapFrom(src => src.ProductItemImages.Select(p => p.Src)))
+            .ReverseMap();
             CreateMap<ProductItem, GetByIdProductItemDto>().ReverseMap();
             CreateMap<ProductItem, EditProductItemDto>().ReverseMap();
             CreateMap<ProductItem, EditProductItemResultDto>().ReverseMap();

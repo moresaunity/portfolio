@@ -35,7 +35,7 @@ namespace Application.Services.Products.ProductType.Queries.Get
 
             int rowCount = 0;
 
-            List<Domain.Products.ProductType> data = model.Include(p => p.ParentProductType).Include(p => p.SubType).PagedResult(request.requestDto.Page, request.requestDto.PageSize, out rowCount).ToList();
+            List<Domain.Products.ProductType> data = model.Include(p => p.ParentProductType).Include(p => p.SubType).Where(p => p.ParentProductTypeId == request.requestDto.ParentId).PagedResult(request.requestDto.Page, request.requestDto.PageSize, out rowCount).ToList();
             foreach (var item in data) if (item.ParentProductType != null) { item.ParentProductType.SubType = null; }
             List<GetProductTypeDto> result = mapper.Map<List<GetProductTypeDto>>(data);
 
@@ -44,6 +44,7 @@ namespace Application.Services.Products.ProductType.Queries.Get
     }
     public class GetProductTypeRequestDto
     {
+        public int? ParentId { get; set; }
         public int Page { get; set; } = 1;
         public int PageSize { get; set; } = 20;
     }

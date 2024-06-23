@@ -3,15 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\moresabj\\source\\repos\\portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\views\\account\\loginorregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\views\\account\\loginorregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\controllers\\v1\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,12 +11,24 @@
       "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\models\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\website.endpoint\\models\\dtos\\account\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCA81645-6E8C-4C7C-AE11-E7F4B002929D}|WebSite.EndPoint\\WebSite.EndPoint.csproj|solutionrelative:website.endpoint\\models\\dtos\\account\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\controllers\\v1\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30350C63-0677-466F-B6F6-C37D749AAB01}|Admin.EndPoint\\Admin.EndPoint.csproj|c:\\users\\moresabj\\source\\repos\\portfolio\\admin.endpoint\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30350C63-0677-466F-B6F6-C37D749AAB01}|Admin.EndPoint\\Admin.EndPoint.csproj|solutionrelative:admin.endpoint\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\product\\producttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\controllers\\v1\\product\\producttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\product\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\controllers\\v1\\product\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|C:\\Users\\moresabj\\source\\repos\\portfolio\\api.endpoint\\controllers\\v1\\product\\productbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D79346-0016-412F-BD5E-EA8B561E42FA}|Api.EndPoint\\Api.EndPoint.csproj|solutionrelative:api.endpoint\\controllers\\v1\\product\\productbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,81 +46,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AccountDto.cs",
               "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\AccountDto.cs",
               "RelativeDocumentMoniker": "Api.EndPoint\\Models\\Dtos\\AccountDto.cs",
               "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Models\\Dtos\\AccountDto.cs",
               "RelativeToolTip": "Api.EndPoint\\Models\\Dtos\\AccountDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T18:56:36.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\AccountController.cs",
-              "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\AccountController.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\AccountController.cs",
-              "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\AccountController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAowE0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T18:36:59.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountDto.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Models\\Dtos\\Account\\AccountDto.cs",
-              "RelativeDocumentMoniker": "WebSite.EndPoint\\Models\\Dtos\\Account\\AccountDto.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Models\\Dtos\\Account\\AccountDto.cs",
-              "RelativeToolTip": "WebSite.EndPoint\\Models\\Dtos\\Account\\AccountDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T18:25:05.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginOrRegister.cshtml",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Account\\LoginOrRegister.cshtml",
-              "RelativeDocumentMoniker": "WebSite.EndPoint\\Views\\Account\\LoginOrRegister.cshtml",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Views\\Account\\LoginOrRegister.cshtml",
-              "RelativeToolTip": "WebSite.EndPoint\\Views\\Account\\LoginOrRegister.cshtml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEYAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-04T18:17:36.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Admin.EndPoint\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Admin.EndPoint\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Admin.EndPoint\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Admin.EndPoint\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T18:09:25.673Z",
+              "WhenOpened": "2024-06-22T10:51:47.698Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "WebSite.EndPoint\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite.EndPoint\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "WebSite.EndPoint\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAlwBgAAAAJAAAA",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\AccountController.cs",
+              "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\AccountController.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\AccountController.cs",
+              "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\AccountController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABsAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T18:08:14.944Z",
+              "WhenOpened": "2024-06-21T10:22:56.764Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\UserController.cs",
+              "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\UserController.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\UserController.cs",
+              "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\UserController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T10:19:38.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Program.cs",
+              "RelativeDocumentMoniker": "Api.EndPoint\\Program.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Program.cs",
+              "RelativeToolTip": "Api.EndPoint\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T23:10:16.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductBrandController.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Product\\ProductBrandController.cs",
+              "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\Product\\ProductBrandController.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Product\\ProductBrandController.cs",
+              "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\Product\\ProductBrandController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAjwC8AAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T23:03:54.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Product\\ProductController.cs",
+              "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\Product\\ProductController.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Product\\ProductController.cs",
+              "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\Product\\ProductController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwEsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T23:03:54.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductTypeController.cs",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Product\\ProductTypeController.cs",
+              "RelativeDocumentMoniker": "Api.EndPoint\\Controllers\\V1\\Product\\ProductTypeController.cs",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\Api.EndPoint\\Controllers\\V1\\Product\\ProductTypeController.cs",
+              "RelativeToolTip": "Api.EndPoint\\Controllers\\V1\\Product\\ProductTypeController.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAArwHgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T23:05:05.556Z"
             }
           ]
         }

@@ -15,6 +15,6 @@ namespace Api.EndPoint.Models.Dtos.Product.ProductItem.Get
         public int RestockThreshold { get; set; }
         public int MaxStockThreshold { get; set; }
         public List<ProductItemFeature_dto> Features { get; set; }
-        public List<ProductItemImage_Dto> Images { get; set; }
+        public List<string> Images { get; set; }
     }
 }

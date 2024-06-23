@@ -58,7 +58,7 @@
             <summary>
             Get All Products
             </summary>
-            <param name="request">Information</param>
+            <param name="requestDto">Information</param>
             <returns>Products</returns>
         </member>
         <member name="M:Api.EndPoint.Controllers.V1.Product.ProductController.Get(System.Int32)">
@@ -136,7 +136,7 @@
             <param name="id">Favorite Id</param>
             <returns>Favorite Information</returns>
         </member>
-        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductTypeController.Get(System.Int32,System.Int32)">
+        <member name="M:Api.EndPoint.Controllers.V1.Product.ProductTypeController.Get(System.Nullable{System.Int32},System.Int32,System.Int32)">
             <summary>
             Get All Product Types
             </summary>

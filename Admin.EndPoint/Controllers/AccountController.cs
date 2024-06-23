@@ -35,11 +35,11 @@ namespace Admin.EndPoint.Controllers
                 
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, result.Model.FullName ?? "پشتیبان سایت"),
-                new Claim(ClaimTypes.NameIdentifier, result.Model.Id),
-                new Claim(ClaimTypes.MobilePhone, result.Model.PhoneNumber),
-                new Claim(ClaimTypes.Email, result.Model.Email),
-                new Claim("Token", result.Token)
+                new(ClaimTypes.Name, result.Model.FullName ?? "پشتیبان سایت"),
+                new(ClaimTypes.NameIdentifier, result.Model.Id),
+                new(ClaimTypes.MobilePhone, result.Model.PhoneNumber),
+                new(ClaimTypes.Email, result.Model.Email),
+                new("Token", result.Token)
             };
             foreach (var item in result.Model.Roles)
                 claims.Add(new Claim(ClaimTypes.Role, item.ToString()));

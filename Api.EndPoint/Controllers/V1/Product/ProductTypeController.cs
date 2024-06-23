@@ -19,19 +19,13 @@ namespace Api.EndPoint.Controllers.V1.Product
     [ApiVersion("1")]
     [Route("api/v{version:apiVersion}/Product/Type/")]
     [ApiController]
-    public class ProductTypeController : ControllerBase
+    public class ProductTypeController(IMapper mapper, IMediator mediator, IMemoryCache cache) : ControllerBase
     {
-        private readonly IMapper mapper;
-        private readonly IMediator mediator;
-        private readonly IMemoryCache cache;
+        private readonly IMapper mapper = mapper;
+        private readonly IMediator mediator = mediator;
+        private readonly IMemoryCache cache = cache;
         private readonly string cacheKey = "ProductTypes";
 
-        public ProductTypeController(IMapper mapper, IMediator mediator, IMemoryCache cache)
-        {
-            this.mapper = mapper;
-            this.mediator = mediator;
-            this.cache = cache;
-        }
         // GET: api/<ProductTypeController>
         /// <summary>
         /// Get All Product Types
@@ -39,13 +33,13 @@ namespace Api.EndPoint.Controllers.V1.Product
         /// <param name="page">Page Index</param>
         /// <param name="pageSize">Page Size</param>
         /// <returns>Product Types</returns>
-        [HttpGet("{page}, {pageSize}")]
-        public IActionResult Get(int page = 1, int pageSize = 10)
+        [HttpGet]
+        public IActionResult Get(int? parentId = null, int page = 1, int pageSize = 10)
         {
             BaseDto<PaginatedItemsDto<GetProductTypeResultDto>> data;
-            if (cache == null || !cache.TryGetValue(cacheKey, out data))
+            if (cache == null || !cache.TryGetValue(cacheKey, out data) || true)
             {
-                GetProductTypeRequest request = new GetProductTypeRequest(new GetProductTypeRequestDto { Page = page, PageSize = pageSize });
+                GetProductTypeRequest request = new(new GetProductTypeRequestDto { ParentId = parentId, Page = page, PageSize = pageSize });
                 BaseDto<PaginatedItemsDto<GetProductTypeDto>> MediateResult = mediator.Send(request).Result;
                 if (!MediateResult.IsSuccess) return BadRequest(MediateResult);
                 List<GetProductTypeResultDto> result = mapper.Map<List<GetProductTypeResultDto>>(MediateResult.Data.Data);
@@ -70,7 +64,7 @@ namespace Api.EndPoint.Controllers.V1.Product
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            GetProductTypeByIdRequest request = new GetProductTypeByIdRequest(id);
+            GetProductTypeByIdRequest request = new(id);
             BaseDto<GetProductTypeByIdDto> MediateResult = mediator.Send(request).Result;
             if (!MediateResult.IsSuccess) return NotFound(MediateResult);
             GetProductTypeResultDto result = mapper.Map<GetProductTypeResultDto>(MediateResult.Data);
@@ -87,7 +81,7 @@ namespace Api.EndPoint.Controllers.V1.Product
         [HttpPost]
         public IActionResult Post([FromBody] AddNewProductTypeRequestDto request)
         {
-            SendProductTypeCommand command = new SendProductTypeCommand(mapper.Map<SendProductTypeDto>(request));
+            SendProductTypeCommand command = new(mapper.Map<SendProductTypeDto>(request));
             BaseDto<SendProductTypeResponseDto> MediateResult = mediator.Send(command).Result;
             if (!MediateResult.IsSuccess) return BadRequest(MediateResult);
             AddNewProductTypeResultDto result = mapper.Map<AddNewProductTypeResultDto>(MediateResult.Data);
@@ -107,7 +101,7 @@ namespace Api.EndPoint.Controllers.V1.Product
         public IActionResult Put(int id, [FromBody] EditProductTypeRequestDto request)
         {
             EditProductTypeDto requestDto = mapper.Map<EditProductTypeDto>(request);
-            EditProductTypeCommand command = new EditProductTypeCommand(requestDto, id);
+            EditProductTypeCommand command = new(requestDto, id);
             BaseDto<EditProductTypeResponseDto> MediateResult = mediator.Send(command).Result;
             if (!MediateResult.IsSuccess) return NotFound(MediateResult);
             EditProductTypeResultDto result = mapper.Map<EditProductTypeResultDto>(MediateResult.Data);
@@ -125,7 +119,7 @@ namespace Api.EndPoint.Controllers.V1.Product
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            DeleteProductTypeCommand command = new DeleteProductTypeCommand(id);
+            DeleteProductTypeCommand command = new(id);
             BaseDto result = mediator.Send(command).Result;
             if (!result.IsSuccess) return NotFound(result);
             cache.Remove(cacheKey);

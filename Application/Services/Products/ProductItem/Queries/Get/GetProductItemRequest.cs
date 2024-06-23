@@ -90,7 +90,7 @@ namespace Application.Services.Products.Queries
         public int RestockThreshold { get; set; }
         public int MaxStockThreshold { get; set; }
         public List<ProductItemFeature_dto> Features { get; set; }
-        public List<ProductItemImage_Dto> Images { get; set; }
+        public List<string> Images { get; set; }
     }
     public enum SortType
     {

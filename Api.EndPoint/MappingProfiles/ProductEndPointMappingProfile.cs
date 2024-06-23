@@ -56,7 +56,13 @@ namespace Api.EndPoint.MappingProfiles
             CreateMap<AddNewProductTypeRequestDto, SendProductTypeDto>().ReverseMap();
             CreateMap<AddNewProductTypeResultDto, SendProductTypeResponseDto>().ReverseMap();
 
-            CreateMap<GetProductTypeDto, GetProductTypeResultDto>().ReverseMap();
+            CreateMap<GetProductTypeDto, GetProductTypeResultDto>()
+                .ForMember(dest => dest.ParentType, opt =>
+                 opt.MapFrom(src => src.ParentProductType.Type))
+                .ForMember(dest => dest.CountSubType, opt =>
+                 opt.MapFrom(src => src.SubType.Count))
+            .ReverseMap();
+
             CreateMap<GetProductTypeDto, ProductType>().ReverseMap();
 
             CreateMap<GetProductTypeResultDto, GetProductTypeByIdDto>().ReverseMap();

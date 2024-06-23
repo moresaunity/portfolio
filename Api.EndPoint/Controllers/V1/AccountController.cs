@@ -79,7 +79,7 @@ namespace Api.EndPoint.Controllers.V1
                 {
                     return Ok(new AccountResultDto { IsSuccess = false, Message = "شما غیر فعال هستید و اجازه دسترسی ندارید." });
                 }
-                Microsoft.AspNetCore.Identity.SignInResult signInResult = await _signInManager.PasswordSignInAsync(user, model.Password, model.IsPersistent, true);
+                Microsoft.AspNetCore.Identity.SignInResult signInResult = await _signInManager.PasswordSignInAsync(user, model.Password, false, true);
                 if (!signInResult.Succeeded)
                 {
                     if (signInResult.RequiresTwoFactor)

@@ -25,7 +25,6 @@ namespace Api.EndPoint.Controllers.V1.Product
     [ApiVersion("1")]
 	[Route("api/v{version:apiVersion}/[controller]")]
 	[ApiController]
-	[Authorize(Roles = "Admin,Operator")]
 	public class ProductController : ControllerBase
 	{
 		private readonly IMemoryCache cache;
@@ -39,19 +38,22 @@ namespace Api.EndPoint.Controllers.V1.Product
 			this.mediator = mediator;
 			this.cache = cache;
 		}
-		// GET: api/<ProductController>
-		/// <summary>
-		/// Get All Products
-		/// </summary>
-		/// <param name="request">Information</param>
-		/// <returns>Products</returns>
+        // GET: api/<ProductController>
+        /// <summary>
+        /// Get All Products
+        /// </summary>
+        /// <param name="requestDto">Information</param>
+        /// <returns>Products</returns>
+        [AllowAnonymous]
 		[HttpGet]
-		public IActionResult Get([FromHeader] ProductItemGetRequestDto request)
+		[Route("GetProducts")]
+		public IActionResult Get(ProductItemGetRequestDto? requestDto)
 		{
-			BaseDto<List<ProductItemGetResultDto>> result;
+			if (requestDto == null) requestDto = new ProductItemGetRequestDto();
+            BaseDto<List<ProductItemGetResultDto>> result;
 			if (cache == null || !cache.TryGetValue(CacheKey, out result))
 			{
-				GetProductItemRequestDto Dto = mapper.Map<GetProductItemRequestDto>(request);
+				GetProductItemRequestDto Dto = mapper.Map<GetProductItemRequestDto>(requestDto);
 				GetProductItemRequest SendData = new GetProductItemRequest(Dto);
 
 				BaseDto<List<GetProductItemDto>> mediateResult = mediator.Send(SendData).Result;
@@ -69,13 +71,13 @@ namespace Api.EndPoint.Controllers.V1.Product
 				if (result.Data.Count != 0 && result.Data != null && cache != null)
 				{
 					cache.Set(CacheKey, result, cacheOptions);
-				}
+				}	
 			}
 			else result = (BaseDto<List<ProductItemGetResultDto>>)cache.Get(CacheKey);
 
 			return Ok(result);
 		}
-
+		
 		// GET api/<ProductController>/5
 		/// <summary>
 		/// Get By Id Product

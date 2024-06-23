@@ -10,7 +10,7 @@ namespace Domain.Products
         public string Type { get; set; }
 
         public int? ParentProductTypeId { get; set; }
-        public ProductType ParentProductType { get; set; }
+        public ProductType? ParentProductType { get; set; }
         public ICollection<ProductType> SubType { get; set; }
         public ICollection<Discount> Discounts { get; set; }
 

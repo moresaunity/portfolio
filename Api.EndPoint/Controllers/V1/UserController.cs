@@ -37,7 +37,6 @@ namespace Api.EndPoint.Controllers.V1
         /// </summary>
         /// <returns>Users</returns>
         [HttpGet]
-        [Authorize(Roles = "Admin,Operator")]
         public async Task<IActionResult> Get()
         {
             logger.LogInformation("This Is a Error");
@@ -135,7 +134,7 @@ namespace Api.EndPoint.Controllers.V1
             if (result.Succeeded)
             {
                 cache.Remove(CacheKey);
-                return Ok(new BaseDto<User>(true, new List<string> { "Update User Is Success" }, user));
+                return Ok(new BaseDto<ReturnLoginViewModel>(true, new List<string> { "Update User Is Success" }, mapper.Map<ReturnLoginViewModel>(user)));
             }
             else
             {
@@ -146,6 +145,9 @@ namespace Api.EndPoint.Controllers.V1
                 return BadRequest(new BaseDto(false, errors));
             }
         }
+
+        // Keep this :
+        // mapper.Map<ReturnLoginViewModel>(user)
 
         /// <summary>
         /// Delete User

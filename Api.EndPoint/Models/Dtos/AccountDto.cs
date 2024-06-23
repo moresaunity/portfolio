@@ -4,19 +4,12 @@ namespace Api.EndPoint.Models.Dtos
 {
     public class AccountDto
     {
-        [DataType(DataType.PhoneNumber)]
-        [Display(Name = "شماره تماس")]
-        public string PhoneNumber { get; set; }
-        [Display(Name = "پست الکترونیک")]
-        [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
-        [DataType(DataType.Password)]
-        [Display(Name = "رمز عبور")]
-        public string Password { get; set; }
-
-        [Display(Name = "به یاد داشتن")]
-        public bool IsPersistent { get; set; } = false;
-
+        [Required] public string PhoneNumber { get; set; }
+        [Required] public string Email { get; set; }
+        [Required] public string Password { get; set; }
         public string ReturnUrl { get; set; } = "/";
+        public bool IsPersistent { get; set; } = false;
     }
 }
+
+

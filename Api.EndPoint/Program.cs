@@ -23,6 +23,13 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+#region Allow-Orgin
+builder.Services.AddCors(c =>
+{
+    c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+});
+#endregion
+
 builder.Services.AddApiVersioning(opitons =>
 {
     opitons.AssumeDefaultVersionWhenUnspecified = true;
@@ -166,6 +173,11 @@ if (app.Environment.IsDevelopment())
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
     });
 }
+
+app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
 
 app.UseCustomExceptionHandler();
 
